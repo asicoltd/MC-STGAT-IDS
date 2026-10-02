@@ -24,7 +24,6 @@ The proposed MC-STGAT-IDS model was developed and evaluated on a personal workst
 | PyTorch | 2.13.0+cu126 |
 | PyTorch Geometric | 2.8.0.post1 |
 | Torchvision | 0.28.0+cu126 |
-| Torchaudio | 2.11.0+cu126 |
 | CUDA Build | 12.6 |
 | NumPy | 2.4.6 |
 | Pandas | 3.0.3 |
