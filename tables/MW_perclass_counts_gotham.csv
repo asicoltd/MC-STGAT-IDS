@@ -1,0 +1,17 @@
+,60s,30s,10s
+C&C Communication,19,34,79
+CoAP Amplification,1,2,2
+File Download,5,5,5
+Ingress Tool Transfer,15,29,82
+Merlin C&C Communication,71,141,415
+Merlin ICMP Flooding,6,6,7
+Merlin TCP Flooding,7,8,9
+Merlin UDP Flooding,3,3,3
+Mirai C&C Communication,115,226,457
+Mirai GRE Flooding,8,11,12
+Mirai TCP Flooding,6,7,13
+Mirai UDP Flooding,17,21,30
+Reporting,13,23,37
+TCP Scan,19,34,93
+Telnet Brute Force,24,47,139
+UDP Scan,37,71,205

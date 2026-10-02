@@ -1,0 +1,11 @@
+MOCO — nf_ton — test set
+threshold = 0.0500
+
+              precision    recall  f1-score   support
+
+      Benign     0.5483    0.4835    0.5139       575
+      Attack     0.9341    0.9484    0.9412      4441
+
+    accuracy                         0.8951      5016
+   macro avg     0.7412    0.7160    0.7275      5016
+weighted avg     0.8899    0.8951    0.8922      5016

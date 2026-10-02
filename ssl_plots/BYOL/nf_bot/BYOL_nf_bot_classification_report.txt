@@ -1,0 +1,11 @@
+BYOL — nf_bot — test set
+threshold = 0.2200
+
+              precision    recall  f1-score   support
+
+      Benign     0.6457    0.5290    0.5816       155
+      Attack     0.9257    0.9528    0.9390       954
+
+    accuracy                         0.8936      1109
+   macro avg     0.7857    0.7409    0.7603      1109
+weighted avg     0.8865    0.8936    0.8891      1109

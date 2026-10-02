@@ -1,0 +1,4 @@
+dataset, ROC, F1, mF1
+gotham,0.9935  MOCO-probe (MoCo probe),0.9771  TFT-MOCO (TFT single),0.1819  TFT-BYOL (TFT single)
+nf_bot,0.9826  TFT-MOCO (TFT ensemble),0.9728  TFT-BYOL (TFT single),0.1910  GCN (Baseline)
+nf_ton,0.9108  TFT-BYOL (TFT single),0.9509  GAT (Baseline),0.0249  TFT-MOCO (TFT ensemble)

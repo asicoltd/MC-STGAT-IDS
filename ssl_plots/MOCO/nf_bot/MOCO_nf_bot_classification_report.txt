@@ -1,0 +1,11 @@
+MOCO — nf_bot — test set
+threshold = 0.1900
+
+              precision    recall  f1-score   support
+
+      Benign     0.4471    0.6000    0.5124       155
+      Attack     0.9312    0.8795    0.9046       954
+
+    accuracy                         0.8404      1109
+   macro avg     0.6892    0.7397    0.7085      1109
+weighted avg     0.8635    0.8404    0.8498      1109

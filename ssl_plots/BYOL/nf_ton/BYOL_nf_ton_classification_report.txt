@@ -1,0 +1,11 @@
+BYOL — nf_ton — test set
+threshold = 0.0500
+
+              precision    recall  f1-score   support
+
+      Benign     0.4331    0.4557    0.4441       575
+      Attack     0.9290    0.9228    0.9259      4441
+
+    accuracy                         0.8692      5016
+   macro avg     0.6810    0.6892    0.6850      5016
+weighted avg     0.8722    0.8692    0.8707      5016
