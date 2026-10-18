@@ -1,0 +1,2350 @@
+{
+  "meta": {
+    "created_utc": "2026-10-15T17:40:38.045441Z",
+    "schema_version": "1.0",
+    "last_updated_utc": "2026-10-18T19:01:14.261509Z"
+  },
+  "baseline": {
+    "gotham": {
+      "mlp": {
+        "roc": 0.9690527876317043,
+        "pr": 0.9589532382060367,
+        "f1": 0.8945868945868946,
+        "fpr": 0.017326732673267328,
+        "fnr": 0.16042780748663102,
+        "macro_f1": 0.5007575638195779,
+        "source": "baseline_benchmark.json"
+      },
+      "gcn": {
+        "roc": 0.8439005665272411,
+        "pr": 0.7968242385018101,
+        "f1": 0.4940239043824701,
+        "fpr": 0.0049504950495049506,
+        "fnr": 0.6684491978609626,
+        "macro_f1": 0.32649937231439746,
+        "source": "baseline_benchmark.json"
+      },
+      "gat": {
+        "roc": 0.9958966484883782,
+        "pr": 0.9903897363382268,
+        "f1": 0.9656992084432717,
+        "fpr": 0.022277227722772276,
+        "fnr": 0.0213903743315508,
+        "macro_f1": 0.47503430697758153,
+        "source": "baseline_benchmark.json"
+      },
+      "sage": {
+        "roc": 0.9997485042621909,
+        "pr": 0.9995018584404723,
+        "f1": 0.9919571045576407,
+        "fpr": 0.0024752475247524753,
+        "fnr": 0.0106951871657754,
+        "macro_f1": 0.5100736641402548,
+        "source": "baseline_benchmark.json"
+      },
+      "egs": {
+        "roc": 0.9995234817599407,
+        "pr": 0.998983503384128,
+        "f1": 0.989247311827957,
+        "fpr": 0.0024752475247524753,
+        "fnr": 0.016042780748663103,
+        "macro_f1": 0.6702108580589683,
+        "source": "baseline_benchmark.json"
+      },
+      "anomal_e": {
+        "roc": 0.9933419812569492,
+        "pr": 0.9919120481412015,
+        "f1": 0.9763779527559056,
+        "fpr": 0.019801980198019802,
+        "fnr": 0.0053475935828877,
+        "macro_f1": 0.48161915641618447,
+        "source": "baseline_benchmark.json"
+      }
+    },
+    "nf_bot": {
+      "mlp": {
+        "roc": 0.8784825002754418,
+        "pr": 0.8955483870866034,
+        "f1": 0.8363009764503159,
+        "fpr": 0.7587131367292225,
+        "fnr": 0.0027397260273972603,
+        "macro_f1": 0.6103433111230554,
+        "source": "baseline_benchmark.json"
+      },
+      "gcn": {
+        "roc": 0.9007436923867934,
+        "pr": 0.9224378089448062,
+        "f1": 0.8286852589641435,
+        "fpr": 0.8016085790884718,
+        "fnr": 0.0027397260273972603,
+        "macro_f1": 0.6928433334070969,
+        "source": "baseline_benchmark.json"
+      },
+      "gat": {
+        "roc": 0.8904054500716148,
+        "pr": 0.9060985145987178,
+        "f1": 0.8369690011481056,
+        "fpr": 0.7587131367292225,
+        "fnr": 0.0013698630136986301,
+        "macro_f1": 0.7346415603513617,
+        "source": "baseline_benchmark.json"
+      },
+      "sage": {
+        "roc": 0.8824084615667119,
+        "pr": 0.9021068174887423,
+        "f1": 0.8411322934719815,
+        "fpr": 0.7319034852546917,
+        "fnr": 0.0027397260273972603,
+        "macro_f1": 0.6823657372093681,
+        "source": "baseline_benchmark.json"
+      },
+      "egs": {
+        "roc": 0.8842594292849536,
+        "pr": 0.9037886486262581,
+        "f1": 0.8377445339470656,
+        "fpr": 0.7506702412868632,
+        "fnr": 0.0027397260273972603,
+        "macro_f1": 0.7328993885929413,
+        "source": "baseline_benchmark.json"
+      },
+      "anomal_e": {
+        "roc": 0.8582099966947007,
+        "pr": 0.8684351837052993,
+        "f1": 0.9322709163346613,
+        "fpr": 0.19839142091152814,
+        "fnr": 0.038356164383561646,
+        "macro_f1": 0.8300442051058635,
+        "source": "baseline_benchmark.json"
+      }
+    },
+    "nf_ton": {
+      "mlp": {
+        "roc": 0.986278062908938,
+        "pr": 0.9981024271042882,
+        "f1": 0.9747468870010474,
+        "fpr": 0.13776337115072934,
+        "fnr": 0.030555555555555555,
+        "macro_f1": 0.8376149728936972,
+        "source": "baseline_benchmark.json"
+      },
+      "gcn": {
+        "roc": 0.9870542949756886,
+        "pr": 0.9982260299235304,
+        "f1": 0.9744242564517995,
+        "fpr": 0.17990275526742303,
+        "fnr": 0.02546296296296296,
+        "macro_f1": 0.837211580727978,
+        "source": "baseline_benchmark.json"
+      },
+      "gat": {
+        "roc": 0.9865097319767091,
+        "pr": 0.998135397589164,
+        "f1": 0.9759648717356136,
+        "fpr": 0.17990275526742303,
+        "fnr": 0.022453703703703705,
+        "macro_f1": 0.8675122869628907,
+        "source": "baseline_benchmark.json"
+      },
+      "sage": {
+        "roc": 0.9896827540668707,
+        "pr": 0.9985800241073334,
+        "f1": 0.9782608695652174,
+        "fpr": 0.15883306320907617,
+        "fnr": 0.020833333333333332,
+        "macro_f1": 0.8749324304141096,
+        "source": "baseline_benchmark.json"
+      },
+      "egs": {
+        "roc": 0.9886018818656581,
+        "pr": 0.9984169787518723,
+        "f1": 0.9763926037911385,
+        "fpr": 0.1312803889789303,
+        "fnr": 0.02824074074074074,
+        "macro_f1": 0.8683551551843184,
+        "source": "baseline_benchmark.json"
+      },
+      "anomal_e": {
+        "roc": 0.9626508193769134,
+        "pr": 0.9911647486538896,
+        "f1": 0.9694473051836594,
+        "fpr": 0.2965964343598055,
+        "fnr": 0.019444444444444445,
+        "macro_f1": 0.8247556255370425,
+        "source": "baseline_benchmark.json"
+      }
+    }
+  },
+  "ssl": {
+    "gotham": {
+      "byol": {
+        "roc": 0.9932360883147138,
+        "pr": 0.979676565610428,
+        "f1": 0.9658792650918635,
+        "fpr": 0.024752475247524754,
+        "fnr": 0.016042780748663103,
+        "macro_f1": 0.9748247761164686,
+        "source": "pure_byol_ssl_summary.json"
+      },
+      "moco": {
+        "roc": 0.9948244824482448,
+        "pr": 0.9875815515597559,
+        "f1": 0.9711286089238845,
+        "fpr": 0.022277227722772276,
+        "fnr": 0.0106951871657754,
+        "macro_f1": 0.9786978874831658,
+        "source": "pure_moco_ssl_summary.json"
+      }
+    },
+    "nf_bot": {
+      "byol": {
+        "roc": 0.8818153439347755,
+        "pr": 0.8937652581589232,
+        "f1": 0.4453524004085802,
+        "fpr": 0.08310991957104558,
+        "fnr": 0.7013698630136986,
+        "macro_f1": 0.5014048065612583,
+        "source": "pure_byol_ssl_summary.json"
+      },
+      "moco": {
+        "roc": 0.9111260053619303,
+        "pr": 0.9243518370413295,
+        "f1": 0.42481598317560465,
+        "fpr": 0.05093833780160858,
+        "fnr": 0.7232876712328767,
+        "macro_f1": 0.4944797047352127,
+        "source": "pure_moco_ssl_summary.json"
+      }
+    },
+    "nf_ton": {
+      "byol": {
+        "roc": 0.9824130349960982,
+        "pr": 0.9975886230124906,
+        "f1": 0.9579428022110069,
+        "fpr": 0.02593192868719611,
+        "fnr": 0.07731481481481481,
+        "macro_f1": 0.8662136691467406,
+        "source": "pure_byol_ssl_summary.json"
+      },
+      "moco": {
+        "roc": 0.9827762020529442,
+        "pr": 0.9975800214554413,
+        "f1": 0.9566053612213007,
+        "fpr": 0.03241491085899514,
+        "fnr": 0.07893518518518519,
+        "macro_f1": 0.8622255101926439,
+        "source": "pure_moco_ssl_summary.json"
+      }
+    }
+  },
+  "tft": {
+    "gotham": {
+      "byol": {
+        "frozen_single": {
+          "roc": 0.9991183358589338,
+          "pr": 0.9976527442134169,
+          "f1": 0.9661016949152542,
+          "fpr": 0.009836065573770493,
+          "fnr": 0.04201680672268908,
+          "macro_f1": 0.5176570957509244,
+          "weighted_f1": NaN,
+          "tn": 302,
+          "fp": 3,
+          "fn": 5,
+          "tp": 114,
+          "threshold_sweep": {
+            "f1_optimal": {
+              "thr": 0.4738721549510956,
+              "roc": 0.9991183358589338,
+              "pr": 0.9976527442134169,
+              "f1": 0.9661016949152542,
+              "fpr": 0.009836065573770493,
+              "fnr": 0.04201680672268908,
+              "tn": 302,
+              "fp": 3,
+              "fn": 5,
+              "tp": 114,
+              "macro_f1": 0.5176570957509244
+            },
+            "balanced": {
+              "thr": 0.4738721549510956,
+              "roc": 0.9991183358589338,
+              "pr": 0.9976527442134169,
+              "f1": 0.9661016949152542,
+              "fpr": 0.009836065573770493,
+              "fnr": 0.04201680672268908,
+              "tn": 302,
+              "fp": 3,
+              "fn": 5,
+              "tp": 114,
+              "macro_f1": 0.5176570957509244
+            },
+            "prior_matched": {
+              "thr": 0.3408855199813843,
+              "roc": 0.9991183358589338,
+              "pr": 0.9976527442134169,
+              "f1": 0.9661016949152542,
+              "fpr": 0.009836065573770493,
+              "fnr": 0.04201680672268908,
+              "tn": 302,
+              "fp": 3,
+              "fn": 5,
+              "tp": 114,
+              "macro_f1": 0.5176570957509244
+            }
+          },
+          "per_class": [
+            {
+              "class": "Merlin C&C Communication",
+              "n_test": 43,
+              "roc_vs_benign": 0.9999237514296607,
+              "pr_vs_benign": 0.9994714587737845,
+              "mean_prob_attack": 0.9545270204544067,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "Mirai C&C Communication",
+              "n_test": 58,
+              "roc_vs_benign": 0.9997173544375353,
+              "pr_vs_benign": 0.9985676097766621,
+              "mean_prob_attack": 0.9234313368797302,
+              "recall_at_thr": 0.9827586206896551,
+              "missed_at_thr": 1
+            },
+            {
+              "class": "Merlin TCP Flooding",
+              "n_test": 5,
+              "roc_vs_benign": 0.998032786885246,
+              "pr_vs_benign": 0.8766666666666667,
+              "mean_prob_attack": 0.8596171140670776,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "Mirai GRE Flooding",
+              "n_test": 1,
+              "roc_vs_benign": 0.9967213114754099,
+              "pr_vs_benign": 0.5,
+              "mean_prob_attack": 0.7751139402389526,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "Telnet Brute Force",
+              "n_test": 3,
+              "roc_vs_benign": 0.9967213114754099,
+              "pr_vs_benign": 0.6388888888888888,
+              "mean_prob_attack": 0.7673172950744629,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "TCP Scan",
+              "n_test": 9,
+              "roc_vs_benign": 0.9930783242258653,
+              "pr_vs_benign": 0.6907999407999408,
+              "mean_prob_attack": 0.5426706671714783,
+              "recall_at_thr": 0.5555555555555556,
+              "missed_at_thr": 4
+            }
+          ],
+          "best_epoch": 42,
+          "finetune": false,
+          "source": "phase3_report.json"
+        },
+        "finetune_single": {
+          "roc": 0.9998897919823667,
+          "pr": 0.9997163169790246,
+          "f1": 0.9875518672199171,
+          "fpr": 0.009836065573770493,
+          "fnr": 0.0,
+          "macro_f1": 0.6066361495424389,
+          "weighted_f1": NaN,
+          "tn": 302,
+          "fp": 3,
+          "fn": 0,
+          "tp": 119,
+          "threshold_sweep": {
+            "f1_optimal": {
+              "thr": 0.6853048205375671,
+              "roc": 0.9998897919823667,
+              "pr": 0.9997163169790246,
+              "f1": 0.9875518672199171,
+              "fpr": 0.009836065573770493,
+              "fnr": 0.0,
+              "tn": 302,
+              "fp": 3,
+              "fn": 0,
+              "tp": 119,
+              "macro_f1": 0.6066361495424389
+            },
+            "balanced": {
+              "thr": 0.6853048205375671,
+              "roc": 0.9998897919823667,
+              "pr": 0.9997163169790246,
+              "f1": 0.9875518672199171,
+              "fpr": 0.009836065573770493,
+              "fnr": 0.0,
+              "tn": 302,
+              "fp": 3,
+              "fn": 0,
+              "tp": 119,
+              "macro_f1": 0.6066361495424389
+            },
+            "prior_matched": {
+              "thr": 0.6189699769020081,
+              "roc": 0.9998897919823667,
+              "pr": 0.9997163169790246,
+              "f1": 0.9875518672199171,
+              "fpr": 0.009836065573770493,
+              "fnr": 0.0,
+              "tn": 302,
+              "fp": 3,
+              "fn": 0,
+              "tp": 119,
+              "macro_f1": 0.6066361495424389
+            }
+          },
+          "per_class": [
+            {
+              "class": "Merlin C&C Communication",
+              "n_test": 43,
+              "roc_vs_benign": 1.0,
+              "pr_vs_benign": 1.0000000000000002,
+              "mean_prob_attack": 0.9967184662818909,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "Merlin TCP Flooding",
+              "n_test": 5,
+              "roc_vs_benign": 1.0,
+              "pr_vs_benign": 1.0,
+              "mean_prob_attack": 0.9891177415847778,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "TCP Scan",
+              "n_test": 9,
+              "roc_vs_benign": 1.0,
+              "pr_vs_benign": 1.0,
+              "mean_prob_attack": 0.9837164282798767,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "Telnet Brute Force",
+              "n_test": 3,
+              "roc_vs_benign": 1.0,
+              "pr_vs_benign": 1.0,
+              "mean_prob_attack": 0.9710838198661804,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "Mirai C&C Communication",
+              "n_test": 58,
+              "roc_vs_benign": 0.9998304126625213,
+              "pr_vs_benign": 0.999108027732727,
+              "mean_prob_attack": 0.9590999484062195,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "Mirai GRE Flooding",
+              "n_test": 1,
+              "roc_vs_benign": 0.9967213114754099,
+              "pr_vs_benign": 0.5,
+              "mean_prob_attack": 0.9102994799613953,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            }
+          ],
+          "best_epoch": 19,
+          "finetune": true,
+          "source": "phase3_report.json"
+        },
+        "frozen_ensemble": {
+          "roc": 0.9990632318501171,
+          "pr": 0.9974515155676664,
+          "f1": 0.9875518672199171,
+          "fpr": 0.009836065573770493,
+          "fnr": 0.0,
+          "macro_f1": 0.46826926627524834,
+          "weighted_f1": NaN,
+          "tn": 302,
+          "fp": 3,
+          "fn": 0,
+          "tp": 119,
+          "threshold_sweep": {
+            "f1_optimal": {
+              "thr": 0.4123246669769287,
+              "roc": 0.9990632318501171,
+              "pr": 0.9974515155676664,
+              "f1": 0.9875518672199171,
+              "fpr": 0.009836065573770493,
+              "fnr": 0.0,
+              "tn": 302,
+              "fp": 3,
+              "fn": 0,
+              "tp": 119,
+              "macro_f1": 0.46826926627524834
+            },
+            "balanced": {
+              "thr": 0.4123246669769287,
+              "roc": 0.9990632318501171,
+              "pr": 0.9974515155676664,
+              "f1": 0.9875518672199171,
+              "fpr": 0.009836065573770493,
+              "fnr": 0.0,
+              "tn": 302,
+              "fp": 3,
+              "fn": 0,
+              "tp": 119,
+              "macro_f1": 0.46826926627524834
+            },
+            "prior_matched": {
+              "thr": 0.48066246509552,
+              "roc": 0.9990632318501171,
+              "pr": 0.9974515155676664,
+              "f1": 0.9747899159663865,
+              "fpr": 0.009836065573770493,
+              "fnr": 0.025210084033613446,
+              "tn": 302,
+              "fp": 3,
+              "fn": 3,
+              "tp": 116,
+              "macro_f1": 0.46826926627524834
+            }
+          },
+          "per_class": [
+            {
+              "class": "Mirai C&C Communication",
+              "n_test": 58,
+              "roc_vs_benign": 0.9998304126625212,
+              "pr_vs_benign": 0.9991280221957989,
+              "mean_prob_attack": 0.9477143883705139,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "Merlin C&C Communication",
+              "n_test": 43,
+              "roc_vs_benign": 0.9997712542889822,
+              "pr_vs_benign": 0.9983769160351098,
+              "mean_prob_attack": 0.922918438911438,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "Merlin TCP Flooding",
+              "n_test": 5,
+              "roc_vs_benign": 0.9967213114754099,
+              "pr_vs_benign": 0.71,
+              "mean_prob_attack": 0.766817033290863,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "Mirai GRE Flooding",
+              "n_test": 1,
+              "roc_vs_benign": 0.9967213114754099,
+              "pr_vs_benign": 0.5,
+              "mean_prob_attack": 0.7990652918815613,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "Telnet Brute Force",
+              "n_test": 3,
+              "roc_vs_benign": 0.9956284153005465,
+              "pr_vs_benign": 0.5888888888888889,
+              "mean_prob_attack": 0.7800124287605286,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "TCP Scan",
+              "n_test": 9,
+              "roc_vs_benign": 0.9934426229508196,
+              "pr_vs_benign": 0.6972101972101973,
+              "mean_prob_attack": 0.6363059282302856,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            }
+          ],
+          "best_epoch": null,
+          "finetune": false,
+          "source": "phase3_report.json"
+        }
+      },
+      "moco": {
+        "frozen_single": {
+          "roc": 0.9993387518942003,
+          "pr": 0.9983936978453627,
+          "f1": 0.9874476987447699,
+          "fpr": 0.006557377049180328,
+          "fnr": 0.008403361344537815,
+          "macro_f1": 0.6115664917558088,
+          "weighted_f1": NaN,
+          "tn": 303,
+          "fp": 2,
+          "fn": 1,
+          "tp": 118,
+          "threshold_sweep": {
+            "f1_optimal": {
+              "thr": 0.5167236328125,
+              "roc": 0.9993387518942003,
+              "pr": 0.9983936978453627,
+              "f1": 0.9874476987447699,
+              "fpr": 0.006557377049180328,
+              "fnr": 0.008403361344537815,
+              "tn": 303,
+              "fp": 2,
+              "fn": 1,
+              "tp": 118,
+              "macro_f1": 0.6115664917558088
+            },
+            "balanced": {
+              "thr": 0.5167236328125,
+              "roc": 0.9993387518942003,
+              "pr": 0.9983936978453627,
+              "f1": 0.9874476987447699,
+              "fpr": 0.006557377049180328,
+              "fnr": 0.008403361344537815,
+              "tn": 303,
+              "fp": 2,
+              "fn": 1,
+              "tp": 118,
+              "macro_f1": 0.6115664917558088
+            },
+            "prior_matched": {
+              "thr": 0.3197033405303955,
+              "roc": 0.9993387518942003,
+              "pr": 0.9983936978453627,
+              "f1": 0.9874476987447699,
+              "fpr": 0.006557377049180328,
+              "fnr": 0.008403361344537815,
+              "tn": 303,
+              "fp": 2,
+              "fn": 1,
+              "tp": 118,
+              "macro_f1": 0.6115664917558088
+            }
+          },
+          "per_class": [
+            {
+              "class": "Telnet Brute Force",
+              "n_test": 3,
+              "roc_vs_benign": 1.0,
+              "pr_vs_benign": 1.0,
+              "mean_prob_attack": 0.9063604474067688,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "Mirai C&C Communication",
+              "n_test": 58,
+              "roc_vs_benign": 0.9998869417750141,
+              "pr_vs_benign": 0.999425287356322,
+              "mean_prob_attack": 0.9368919134140015,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "Merlin C&C Communication",
+              "n_test": 43,
+              "roc_vs_benign": 0.9997712542889821,
+              "pr_vs_benign": 0.9984255753860947,
+              "mean_prob_attack": 0.9444209933280945,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "Merlin TCP Flooding",
+              "n_test": 5,
+              "roc_vs_benign": 0.998032786885246,
+              "pr_vs_benign": 0.8766666666666667,
+              "mean_prob_attack": 0.8127216100692749,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "Mirai GRE Flooding",
+              "n_test": 1,
+              "roc_vs_benign": 0.9967213114754099,
+              "pr_vs_benign": 0.5,
+              "mean_prob_attack": 0.8007470965385437,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "TCP Scan",
+              "n_test": 9,
+              "roc_vs_benign": 0.994535519125683,
+              "pr_vs_benign": 0.9200214707461085,
+              "mean_prob_attack": 0.8176394104957581,
+              "recall_at_thr": 0.8888888888888888,
+              "missed_at_thr": 1
+            }
+          ],
+          "best_epoch": 81,
+          "finetune": false,
+          "source": "phase3_report.json"
+        },
+        "finetune_single": {
+          "roc": 0.9998346879735501,
+          "pr": 0.9995708015014693,
+          "f1": 0.9915966386554622,
+          "fpr": 0.003278688524590164,
+          "fnr": 0.008403361344537815,
+          "macro_f1": 0.8986291126620138,
+          "weighted_f1": NaN,
+          "tn": 304,
+          "fp": 1,
+          "fn": 1,
+          "tp": 118,
+          "threshold_sweep": {
+            "f1_optimal": {
+              "thr": 0.6136494874954224,
+              "roc": 0.9998346879735501,
+              "pr": 0.9995708015014693,
+              "f1": 0.9915966386554622,
+              "fpr": 0.003278688524590164,
+              "fnr": 0.008403361344537815,
+              "tn": 304,
+              "fp": 1,
+              "fn": 1,
+              "tp": 118,
+              "macro_f1": 0.8986291126620138
+            },
+            "balanced": {
+              "thr": 0.6136494874954224,
+              "roc": 0.9998346879735501,
+              "pr": 0.9995708015014693,
+              "f1": 0.9915966386554622,
+              "fpr": 0.003278688524590164,
+              "fnr": 0.008403361344537815,
+              "tn": 304,
+              "fp": 1,
+              "fn": 1,
+              "tp": 118,
+              "macro_f1": 0.8986291126620138
+            },
+            "prior_matched": {
+              "thr": 0.40355318784713745,
+              "roc": 0.9998346879735501,
+              "pr": 0.9995708015014693,
+              "f1": 0.99581589958159,
+              "fpr": 0.003278688524590164,
+              "fnr": 0.0,
+              "tn": 304,
+              "fp": 1,
+              "fn": 0,
+              "tp": 119,
+              "macro_f1": 0.8986291126620138
+            }
+          },
+          "per_class": [
+            {
+              "class": "Merlin TCP Flooding",
+              "n_test": 5,
+              "roc_vs_benign": 1.0,
+              "pr_vs_benign": 1.0,
+              "mean_prob_attack": 0.944251537322998,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "Telnet Brute Force",
+              "n_test": 3,
+              "roc_vs_benign": 1.0,
+              "pr_vs_benign": 1.0,
+              "mean_prob_attack": 0.9027702212333679,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "Mirai C&C Communication",
+              "n_test": 58,
+              "roc_vs_benign": 0.9999434708875071,
+              "pr_vs_benign": 0.9997077732320282,
+              "mean_prob_attack": 0.9513998627662659,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "Merlin C&C Communication",
+              "n_test": 43,
+              "roc_vs_benign": 0.9999237514296607,
+              "pr_vs_benign": 0.9994714587737845,
+              "mean_prob_attack": 0.9744117856025696,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "TCP Scan",
+              "n_test": 9,
+              "roc_vs_benign": 0.9989071038251367,
+              "pr_vs_benign": 0.9626543209876544,
+              "mean_prob_attack": 0.8477671146392822,
+              "recall_at_thr": 0.8888888888888888,
+              "missed_at_thr": 1
+            },
+            {
+              "class": "Mirai GRE Flooding",
+              "n_test": 1,
+              "roc_vs_benign": 0.9967213114754099,
+              "pr_vs_benign": 0.5,
+              "mean_prob_attack": 0.7721338868141174,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            }
+          ],
+          "best_epoch": 18,
+          "finetune": true,
+          "source": "phase3_report.json"
+        },
+        "frozen_ensemble": {
+          "roc": 0.9997244799559168,
+          "pr": 0.999286109754009,
+          "f1": 0.9915966386554622,
+          "fpr": 0.003278688524590164,
+          "fnr": 0.008403361344537815,
+          "macro_f1": 0.6999690105927429,
+          "weighted_f1": NaN,
+          "tn": 304,
+          "fp": 1,
+          "fn": 1,
+          "tp": 118,
+          "threshold_sweep": {
+            "f1_optimal": {
+              "thr": 0.47924232482910156,
+              "roc": 0.9997244799559168,
+              "pr": 0.999286109754009,
+              "f1": 0.9915966386554622,
+              "fpr": 0.003278688524590164,
+              "fnr": 0.008403361344537815,
+              "tn": 304,
+              "fp": 1,
+              "fn": 1,
+              "tp": 118,
+              "macro_f1": 0.6999690105927429
+            },
+            "balanced": {
+              "thr": 0.47924232482910156,
+              "roc": 0.9997244799559168,
+              "pr": 0.999286109754009,
+              "f1": 0.9915966386554622,
+              "fpr": 0.003278688524590164,
+              "fnr": 0.008403361344537815,
+              "tn": 304,
+              "fp": 1,
+              "fn": 1,
+              "tp": 118,
+              "macro_f1": 0.6999690105927429
+            },
+            "prior_matched": {
+              "thr": 0.39275723695755005,
+              "roc": 0.9997244799559168,
+              "pr": 0.999286109754009,
+              "f1": 0.9915966386554622,
+              "fpr": 0.003278688524590164,
+              "fnr": 0.008403361344537815,
+              "tn": 304,
+              "fp": 1,
+              "fn": 1,
+              "tp": 118,
+              "macro_f1": 0.6999690105927429
+            }
+          },
+          "per_class": [
+            {
+              "class": "Merlin TCP Flooding",
+              "n_test": 5,
+              "roc_vs_benign": 1.0,
+              "pr_vs_benign": 1.0,
+              "mean_prob_attack": 0.9089195132255554,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "Mirai GRE Flooding",
+              "n_test": 1,
+              "roc_vs_benign": 1.0,
+              "pr_vs_benign": 1.0,
+              "mean_prob_attack": 0.8061806559562683,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "Merlin C&C Communication",
+              "n_test": 43,
+              "roc_vs_benign": 0.9999237514296607,
+              "pr_vs_benign": 0.9994714587737845,
+              "mean_prob_attack": 0.9628826379776001,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "Mirai C&C Communication",
+              "n_test": 58,
+              "roc_vs_benign": 0.9997738835500283,
+              "pr_vs_benign": 0.998800145959328,
+              "mean_prob_attack": 0.9047483205795288,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "Telnet Brute Force",
+              "n_test": 3,
+              "roc_vs_benign": 0.9989071038251367,
+              "pr_vs_benign": 0.9166666666666665,
+              "mean_prob_attack": 0.7494655251502991,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "TCP Scan",
+              "n_test": 9,
+              "roc_vs_benign": 0.9985428051001821,
+              "pr_vs_benign": 0.9598765432098766,
+              "mean_prob_attack": 0.7667085528373718,
+              "recall_at_thr": 0.8888888888888888,
+              "missed_at_thr": 1
+            }
+          ],
+          "best_epoch": null,
+          "finetune": false,
+          "source": "phase3_report.json"
+        }
+      }
+    },
+    "nf_bot": {
+      "byol": {
+        "frozen_single": {
+          "roc": 0.7512796414112203,
+          "pr": 0.809984944836641,
+          "f1": 0.9286898839137645,
+          "fpr": 0.3481781376518219,
+          "fnr": 0.0,
+          "macro_f1": 0.47760634789817563,
+          "weighted_f1": NaN,
+          "tn": 161,
+          "fp": 86,
+          "fn": 0,
+          "tp": 560,
+          "threshold_sweep": {
+            "f1_optimal": {
+              "thr": 0.41459423303604126,
+              "roc": 0.7512796414112203,
+              "pr": 0.809984944836641,
+              "f1": 0.9286898839137645,
+              "fpr": 0.3481781376518219,
+              "fnr": 0.0,
+              "tn": 161,
+              "fp": 86,
+              "fn": 0,
+              "tp": 560,
+              "macro_f1": 0.47760634789817563
+            },
+            "balanced": {
+              "thr": 0.534285843372345,
+              "roc": 0.7512796414112203,
+              "pr": 0.809984944836641,
+              "f1": 0.29931972789115646,
+              "fpr": 0.2631578947368421,
+              "fnr": 0.8035714285714286,
+              "tn": 182,
+              "fp": 65,
+              "fn": 450,
+              "tp": 110,
+              "macro_f1": 0.47760634789817563
+            },
+            "prior_matched": {
+              "thr": 0.47357451915740967,
+              "roc": 0.7512796414112203,
+              "pr": 0.809984944836641,
+              "f1": 0.7258064516129032,
+              "fpr": 0.291497975708502,
+              "fnr": 0.35714285714285715,
+              "tn": 175,
+              "fp": 72,
+              "fn": 200,
+              "tp": 360,
+              "macro_f1": 0.47760634789817563
+            }
+          },
+          "per_class": [
+            {
+              "class": "DoS",
+              "n_test": 19,
+              "roc_vs_benign": 0.9980822501598124,
+              "pr_vs_benign": 0.9742899237257228,
+              "mean_prob_attack": 0.945175051689148,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "DDoS",
+              "n_test": 18,
+              "roc_vs_benign": 0.9979757085020242,
+              "pr_vs_benign": 0.9712794718277176,
+              "mean_prob_attack": 0.9462203979492188,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "Theft",
+              "n_test": 7,
+              "roc_vs_benign": 0.9051474840948525,
+              "pr_vs_benign": 0.1396632920198787,
+              "mean_prob_attack": 0.6707308888435364,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "Reconnaissance",
+              "n_test": 516,
+              "roc_vs_benign": 0.7315106863760474,
+              "pr_vs_benign": 0.7509131944672299,
+              "mean_prob_attack": 0.5122863054275513,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            }
+          ],
+          "best_epoch": 205,
+          "finetune": false,
+          "source": "phase3_report.json"
+        },
+        "finetune_single": {
+          "roc": 0.9002602660497397,
+          "pr": 0.896330567948827,
+          "f1": 0.9302325581395349,
+          "fpr": 0.340080971659919,
+          "fnr": 0.0,
+          "macro_f1": 0.7409050476948822,
+          "weighted_f1": NaN,
+          "tn": 163,
+          "fp": 84,
+          "fn": 0,
+          "tp": 560,
+          "threshold_sweep": {
+            "f1_optimal": {
+              "thr": 0.36673229932785034,
+              "roc": 0.9002602660497397,
+              "pr": 0.896330567948827,
+              "f1": 0.9302325581395349,
+              "fpr": 0.340080971659919,
+              "fnr": 0.0,
+              "tn": 163,
+              "fp": 84,
+              "fn": 0,
+              "tp": 560,
+              "macro_f1": 0.7409050476948822
+            },
+            "balanced": {
+              "thr": 0.5437324047088623,
+              "roc": 0.9002602660497397,
+              "pr": 0.896330567948827,
+              "f1": 0.390646492434663,
+              "fpr": 0.10121457489878542,
+              "fnr": 0.7464285714285714,
+              "tn": 222,
+              "fp": 25,
+              "fn": 418,
+              "tp": 142,
+              "macro_f1": 0.7409050476948822
+            },
+            "prior_matched": {
+              "thr": 0.5119195580482483,
+              "roc": 0.9002602660497397,
+              "pr": 0.896330567948827,
+              "f1": 0.7337662337662337,
+              "fpr": 0.10121457489878542,
+              "fnr": 0.39464285714285713,
+              "tn": 222,
+              "fp": 25,
+              "fn": 221,
+              "tp": 339,
+              "macro_f1": 0.7409050476948822
+            }
+          },
+          "per_class": [
+            {
+              "class": "DoS",
+              "n_test": 19,
+              "roc_vs_benign": 0.9718730023439164,
+              "pr_vs_benign": 0.6248501781063229,
+              "mean_prob_attack": 0.9716331958770752,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "DDoS",
+              "n_test": 18,
+              "roc_vs_benign": 0.9642375168690958,
+              "pr_vs_benign": 0.48354684001632525,
+              "mean_prob_attack": 0.956165611743927,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "Theft",
+              "n_test": 7,
+              "roc_vs_benign": 0.951417004048583,
+              "pr_vs_benign": 0.2379503218291365,
+              "mean_prob_attack": 0.6930993795394897,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "Reconnaissance",
+              "n_test": 516,
+              "roc_vs_benign": 0.894697611649876,
+              "pr_vs_benign": 0.8723300943205845,
+              "mean_prob_attack": 0.5394496321678162,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            }
+          ],
+          "best_epoch": 23,
+          "finetune": true,
+          "source": "phase3_report.json"
+        },
+        "frozen_ensemble": {
+          "roc": 0.8750650665124349,
+          "pr": 0.8832924207169519,
+          "f1": 0.7663551401869159,
+          "fpr": 0.13765182186234817,
+          "fnr": 0.3410714285714286,
+          "macro_f1": 0.5132939223598771,
+          "weighted_f1": NaN,
+          "tn": 213,
+          "fp": 34,
+          "fn": 191,
+          "tp": 369,
+          "threshold_sweep": {
+            "f1_optimal": {
+              "thr": 0.4860250651836395,
+              "roc": 0.8750650665124349,
+              "pr": 0.8832924207169519,
+              "f1": 0.7663551401869159,
+              "fpr": 0.13765182186234817,
+              "fnr": 0.3410714285714286,
+              "tn": 213,
+              "fp": 34,
+              "fn": 191,
+              "tp": 369,
+              "macro_f1": 0.5132939223598771
+            },
+            "balanced": {
+              "thr": 0.48759880661964417,
+              "roc": 0.8750650665124349,
+              "pr": 0.8832924207169519,
+              "f1": 0.4910941475826972,
+              "fpr": 0.13360323886639677,
+              "fnr": 0.6553571428571429,
+              "tn": 214,
+              "fp": 33,
+              "fn": 367,
+              "tp": 193,
+              "macro_f1": 0.5132939223598771
+            },
+            "prior_matched": {
+              "thr": 0.4864650070667267,
+              "roc": 0.8750650665124349,
+              "pr": 0.8832924207169519,
+              "f1": 0.7428571428571429,
+              "fpr": 0.13765182186234817,
+              "fnr": 0.3732142857142857,
+              "tn": 213,
+              "fp": 34,
+              "fn": 209,
+              "tp": 351,
+              "macro_f1": 0.5132939223598771
+            }
+          },
+          "per_class": [
+            {
+              "class": "DoS",
+              "n_test": 19,
+              "roc_vs_benign": 1.0,
+              "pr_vs_benign": 1.0,
+              "mean_prob_attack": 0.9200486540794373,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "DDoS",
+              "n_test": 18,
+              "roc_vs_benign": 0.9968511021142601,
+              "pr_vs_benign": 0.9756944444444444,
+              "mean_prob_attack": 0.921040415763855,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "Theft",
+              "n_test": 7,
+              "roc_vs_benign": 0.9010989010989012,
+              "pr_vs_benign": 0.13285454483596898,
+              "mean_prob_attack": 0.649316668510437,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "Reconnaissance",
+              "n_test": 516,
+              "roc_vs_benign": 0.8658710730314159,
+              "pr_vs_benign": 0.8374774755135022,
+              "mean_prob_attack": 0.5012987852096558,
+              "recall_at_thr": 0.9806201550387597,
+              "missed_at_thr": 10
+            }
+          ],
+          "best_epoch": null,
+          "finetune": false,
+          "source": "phase3_report.json"
+        }
+      },
+      "moco": {
+        "frozen_single": {
+          "roc": 0.9083245905019497,
+          "pr": 0.9259430035722869,
+          "f1": 0.889050036258158,
+          "fpr": 0.5687732342007435,
+          "fnr": 0.0,
+          "macro_f1": 0.3010403059262773,
+          "weighted_f1": NaN,
+          "tn": 116,
+          "fp": 153,
+          "fn": 0,
+          "tp": 613,
+          "threshold_sweep": {
+            "f1_optimal": {
+              "thr": 0.3808387219905853,
+              "roc": 0.9083245905019497,
+              "pr": 0.9259430035722869,
+              "f1": 0.889050036258158,
+              "fpr": 0.5687732342007435,
+              "fnr": 0.0,
+              "tn": 116,
+              "fp": 153,
+              "fn": 0,
+              "tp": 613,
+              "macro_f1": 0.3010403059262773
+            },
+            "balanced": {
+              "thr": 0.4872012138366699,
+              "roc": 0.9083245905019497,
+              "pr": 0.9259430035722869,
+              "f1": 0.42786069651741293,
+              "fpr": 0.07063197026022305,
+              "fnr": 0.7194127243066885,
+              "tn": 250,
+              "fp": 19,
+              "fn": 441,
+              "tp": 172,
+              "macro_f1": 0.3010403059262773
+            },
+            "prior_matched": {
+              "thr": 0.48438918590545654,
+              "roc": 0.9083245905019497,
+              "pr": 0.9259430035722869,
+              "f1": 0.8614564831261101,
+              "fpr": 0.10408921933085502,
+              "fnr": 0.20880913539967375,
+              "tn": 241,
+              "fp": 28,
+              "fn": 128,
+              "tp": 485,
+              "macro_f1": 0.3010403059262773
+            }
+          },
+          "per_class": [
+            {
+              "class": "DoS",
+              "n_test": 19,
+              "roc_vs_benign": 0.9980822501598124,
+              "pr_vs_benign": 0.9830827067669172,
+              "mean_prob_attack": 0.7525795698165894,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "DDoS",
+              "n_test": 18,
+              "roc_vs_benign": 0.9964012595591544,
+              "pr_vs_benign": 0.9738562091503268,
+              "mean_prob_attack": 0.738939642906189,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "Theft",
+              "n_test": 7,
+              "roc_vs_benign": 0.9271255060728746,
+              "pr_vs_benign": 0.17383613625849648,
+              "mean_prob_attack": 0.4870532155036926,
+              "recall_at_thr": 0.0,
+              "missed_at_thr": 7
+            },
+            {
+              "class": "Reconnaissance",
+              "n_test": 516,
+              "roc_vs_benign": 0.9102917176662587,
+              "pr_vs_benign": 0.8993084017609507,
+              "mean_prob_attack": 0.4898192286491394,
+              "recall_at_thr": 0.24806201550387597,
+              "missed_at_thr": 388
+            }
+          ],
+          "best_epoch": 48,
+          "finetune": false,
+          "source": "phase3_report.json"
+        },
+        "frozen_ensemble": {
+          "roc": 0.8777661206692663,
+          "pr": 0.8962243413404232,
+          "f1": 0.9280245022970903,
+          "fpr": 0.32342007434944237,
+          "fnr": 0.011419249592169658,
+          "macro_f1": 0.5559276556492421,
+          "weighted_f1": NaN,
+          "tn": 182,
+          "fp": 87,
+          "fn": 7,
+          "tp": 606,
+          "threshold_sweep": {
+            "f1_optimal": {
+              "thr": 0.4467207193374634,
+              "roc": 0.8777661206692663,
+              "pr": 0.8962243413404232,
+              "f1": 0.9280245022970903,
+              "fpr": 0.32342007434944237,
+              "fnr": 0.011419249592169658,
+              "tn": 182,
+              "fp": 87,
+              "fn": 7,
+              "tp": 606,
+              "macro_f1": 0.5559276556492421
+            },
+            "balanced": {
+              "thr": 0.5011980533599854,
+              "roc": 0.8777661206692663,
+              "pr": 0.8962243413404232,
+              "f1": 0.3950310559006211,
+              "fpr": 0.12267657992565056,
+              "fnr": 0.7406199021207178,
+              "tn": 236,
+              "fp": 33,
+              "fn": 454,
+              "tp": 159,
+              "macro_f1": 0.5559276556492421
+            },
+            "prior_matched": {
+              "thr": 0.4912554919719696,
+              "roc": 0.8777661206692663,
+              "pr": 0.8962243413404232,
+              "f1": 0.8018433179723502,
+              "fpr": 0.137546468401487,
+              "fnr": 0.2903752039151713,
+              "tn": 232,
+              "fp": 37,
+              "fn": 178,
+              "tp": 435,
+              "macro_f1": 0.5559276556492421
+            }
+          },
+          "per_class": [
+            {
+              "class": "DoS",
+              "n_test": 19,
+              "roc_vs_benign": 0.9974430002130833,
+              "pr_vs_benign": 0.9779316712834718,
+              "mean_prob_attack": 0.911209225654602,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "DDoS",
+              "n_test": 18,
+              "roc_vs_benign": 0.9970760233918129,
+              "pr_vs_benign": 0.9730792498487598,
+              "mean_prob_attack": 0.8972322940826416,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "Theft",
+              "n_test": 7,
+              "roc_vs_benign": 0.9386928860613071,
+              "pr_vs_benign": 0.20043016094090588,
+              "mean_prob_attack": 0.6653423309326172,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "Reconnaissance",
+              "n_test": 516,
+              "roc_vs_benign": 0.8741173147537897,
+              "pr_vs_benign": 0.8509904734042485,
+              "mean_prob_attack": 0.5061520934104919,
+              "recall_at_thr": 0.9418604651162791,
+              "missed_at_thr": 30
+            }
+          ],
+          "best_epoch": null,
+          "finetune": false,
+          "source": "phase3_report.json"
+        },
+        "finetune_single": {
+          "roc": 0.8487637362637362,
+          "pr": 0.8709814635410972,
+          "f1": 0.9246231155778895,
+          "fpr": 0.3319838056680162,
+          "fnr": 0.014285714285714285,
+          "macro_f1": 0.48309423241615973,
+          "weighted_f1": 0.7963776600635808,
+          "tn": 165,
+          "fp": 82,
+          "fn": 8,
+          "tp": 552,
+          "threshold_sweep": {
+            "f1_optimal": {
+              "thr": 0.49300453066825867,
+              "roc": 0.8487637362637362,
+              "pr": 0.8709814635410972,
+              "f1": 0.9246231155778895,
+              "fpr": 0.3319838056680162,
+              "fnr": 0.014285714285714285,
+              "tn": 165,
+              "fp": 82,
+              "fn": 8,
+              "tp": 552,
+              "macro_f1": 0.48309423241615973,
+              "weighted_f1": 0.7963776600635808
+            },
+            "balanced": {
+              "thr": 0.5229806900024414,
+              "roc": 0.8487637362637362,
+              "pr": 0.8709814635410972,
+              "f1": 0.3177304964539007,
+              "fpr": 0.13360323886639677,
+              "fnr": 0.8,
+              "tn": 214,
+              "fp": 33,
+              "fn": 448,
+              "tp": 112,
+              "macro_f1": 0.48309423241615973,
+              "weighted_f1": 0.7963776600635808
+            },
+            "prior_matched": {
+              "thr": 0.5160383582115173,
+              "roc": 0.8487637362637362,
+              "pr": 0.8709814635410972,
+              "f1": 0.7525987525987526,
+              "fpr": 0.16194331983805668,
+              "fnr": 0.3535714285714286,
+              "tn": 207,
+              "fp": 40,
+              "fn": 198,
+              "tp": 362,
+              "macro_f1": 0.48309423241615973,
+              "weighted_f1": 0.7963776600635808
+            }
+          },
+          "per_class": [
+            {
+              "class": "DoS",
+              "n_test": 19,
+              "roc_vs_benign": 0.9936075005327083,
+              "pr_vs_benign": 0.9256157693627138,
+              "mean_prob_attack": 0.8651073575019836,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "DDoS",
+              "n_test": 18,
+              "roc_vs_benign": 0.9898785425101214,
+              "pr_vs_benign": 0.8640818718812617,
+              "mean_prob_attack": 0.8527775406837463,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "Theft",
+              "n_test": 7,
+              "roc_vs_benign": 0.8635049161364952,
+              "pr_vs_benign": 0.1001877151729646,
+              "mean_prob_attack": 0.5365737080574036,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "Reconnaissance",
+              "n_test": 516,
+              "roc_vs_benign": 0.838307755076421,
+              "pr_vs_benign": 0.8306240137669137,
+              "mean_prob_attack": 0.5337662100791931,
+              "recall_at_thr": 0.9844961240310077,
+              "missed_at_thr": 8
+            }
+          ],
+          "best_epoch": 14,
+          "finetune": true,
+          "source": "recomputed"
+        }
+      }
+    },
+    "nf_ton": {
+      "byol": {
+        "frozen_single": {
+          "roc": 0.9876409818974504,
+          "pr": 0.9984270381631918,
+          "f1": 0.9756729523535339,
+          "fpr": 0.08817204301075268,
+          "fnr": 0.03639465453511515,
+          "macro_f1": 0.8305059064074489,
+          "weighted_f1": NaN,
+          "tn": 424,
+          "fp": 41,
+          "fn": 128,
+          "tp": 3389,
+          "threshold_sweep": {
+            "f1_optimal": {
+              "thr": 0.34752556681632996,
+              "roc": 0.9876409818974504,
+              "pr": 0.9984270381631918,
+              "f1": 0.9756729523535339,
+              "fpr": 0.08817204301075268,
+              "fnr": 0.03639465453511515,
+              "tn": 424,
+              "fp": 41,
+              "fn": 128,
+              "tp": 3389,
+              "macro_f1": 0.8305059064074489
+            },
+            "balanced": {
+              "thr": 0.6359280347824097,
+              "roc": 0.9876409818974504,
+              "pr": 0.9984270381631918,
+              "f1": 0.960578768640189,
+              "fpr": 0.0064516129032258064,
+              "fnr": 0.07506397497867501,
+              "tn": 462,
+              "fp": 3,
+              "fn": 264,
+              "tp": 3253,
+              "macro_f1": 0.8305059064074489
+            },
+            "prior_matched": {
+              "thr": 0.30790650844573975,
+              "roc": 0.9876409818974504,
+              "pr": 0.9984270381631918,
+              "f1": 0.9766776362855917,
+              "fpr": 0.12688172043010754,
+              "fnr": 0.029570656809781062,
+              "tn": 406,
+              "fp": 59,
+              "fn": 104,
+              "tp": 3413,
+              "macro_f1": 0.8305059064074489
+            }
+          },
+          "per_class": [
+            {
+              "class": "ddos",
+              "n_test": 529,
+              "roc_vs_benign": 1.0,
+              "pr_vs_benign": 1.0,
+              "mean_prob_attack": 0.9244968295097351,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "password",
+              "n_test": 610,
+              "roc_vs_benign": 1.0,
+              "pr_vs_benign": 1.0,
+              "mean_prob_attack": 0.973339855670929,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "xss",
+              "n_test": 334,
+              "roc_vs_benign": 1.0,
+              "pr_vs_benign": 1.0,
+              "mean_prob_attack": 0.9754512310028076,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "dos",
+              "n_test": 378,
+              "roc_vs_benign": 0.9999374182169881,
+              "pr_vs_benign": 0.999925191441901,
+              "mean_prob_attack": 0.9470563530921936,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "injection",
+              "n_test": 135,
+              "roc_vs_benign": 0.9969573874950219,
+              "pr_vs_benign": 0.9894972958053684,
+              "mean_prob_attack": 0.8136689066886902,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "Backdoor",
+              "n_test": 1167,
+              "roc_vs_benign": 0.9965779362578434,
+              "pr_vs_benign": 0.9988687668578049,
+              "mean_prob_attack": 0.9195888042449951,
+              "recall_at_thr": 0.9905741216795202,
+              "missed_at_thr": 11
+            },
+            {
+              "class": "ransomware",
+              "n_test": 24,
+              "roc_vs_benign": 0.9658602150537634,
+              "pr_vs_benign": 0.6582534465837575,
+              "mean_prob_attack": 0.5786283016204834,
+              "recall_at_thr": 0.875,
+              "missed_at_thr": 3
+            },
+            {
+              "class": "scanning",
+              "n_test": 322,
+              "roc_vs_benign": 0.8899485741000467,
+              "pr_vs_benign": 0.8759932129220844,
+              "mean_prob_attack": 0.5468267798423767,
+              "recall_at_thr": 0.6708074534161491,
+              "missed_at_thr": 106
+            },
+            {
+              "class": "mitm",
+              "n_test": 18,
+              "roc_vs_benign": 0.8451612903225807,
+              "pr_vs_benign": 0.2966611727562426,
+              "mean_prob_attack": 0.4082186222076416,
+              "recall_at_thr": 0.5555555555555556,
+              "missed_at_thr": 8
+            }
+          ],
+          "best_epoch": 153,
+          "finetune": false,
+          "source": "phase3_report.json"
+        },
+        "finetune_single": {
+          "roc": 0.983713514389402,
+          "pr": 0.9978936709292914,
+          "f1": 0.9742631200575126,
+          "fpr": 0.10752688172043011,
+          "fnr": 0.03667898777367074,
+          "macro_f1": 0.8037576620451702,
+          "weighted_f1": NaN,
+          "tn": 415,
+          "fp": 50,
+          "fn": 129,
+          "tp": 3388,
+          "threshold_sweep": {
+            "f1_optimal": {
+              "thr": 0.28536200523376465,
+              "roc": 0.983713514389402,
+              "pr": 0.9978936709292914,
+              "f1": 0.9742631200575126,
+              "fpr": 0.10752688172043011,
+              "fnr": 0.03667898777367074,
+              "tn": 415,
+              "fp": 50,
+              "fn": 129,
+              "tp": 3388,
+              "macro_f1": 0.8037576620451702
+            },
+            "balanced": {
+              "thr": 0.8605056405067444,
+              "roc": 0.983713514389402,
+              "pr": 0.9978936709292914,
+              "f1": 0.9418657052726453,
+              "fpr": 0.010752688172043012,
+              "fnr": 0.10861529712823428,
+              "tn": 460,
+              "fp": 5,
+              "fn": 382,
+              "tp": 3135,
+              "macro_f1": 0.8037576620451702
+            },
+            "prior_matched": {
+              "thr": 0.2781602442264557,
+              "roc": 0.983713514389402,
+              "pr": 0.9978936709292914,
+              "f1": 0.974152785755313,
+              "fpr": 0.11827956989247312,
+              "fnr": 0.0355416548194484,
+              "tn": 410,
+              "fp": 55,
+              "fn": 125,
+              "tp": 3392,
+              "macro_f1": 0.8037576620451702
+            }
+          },
+          "per_class": [
+            {
+              "class": "ddos",
+              "n_test": 53,
+              "roc_vs_benign": 1.0,
+              "pr_vs_benign": 0.9999999999999999,
+              "mean_prob_attack": 0.964978039264679,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "dos",
+              "n_test": 38,
+              "roc_vs_benign": 1.0,
+              "pr_vs_benign": 0.9999999999999999,
+              "mean_prob_attack": 0.9636051058769226,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "password",
+              "n_test": 62,
+              "roc_vs_benign": 1.0,
+              "pr_vs_benign": 1.0,
+              "mean_prob_attack": 0.9946395754814148,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "xss",
+              "n_test": 34,
+              "roc_vs_benign": 1.0,
+              "pr_vs_benign": 1.0,
+              "mean_prob_attack": 0.9365776777267456,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "Backdoor",
+              "n_test": 117,
+              "roc_vs_benign": 0.9950617283950618,
+              "pr_vs_benign": 0.9982034232970218,
+              "mean_prob_attack": 0.938284158706665,
+              "recall_at_thr": 0.9914529914529915,
+              "missed_at_thr": 1
+            },
+            {
+              "class": "injection",
+              "n_test": 14,
+              "roc_vs_benign": 0.9920634920634921,
+              "pr_vs_benign": 0.9745225013082155,
+              "mean_prob_attack": 0.8678280711174011,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "mitm",
+              "n_test": 1,
+              "roc_vs_benign": 0.9777777777777777,
+              "pr_vs_benign": 0.5,
+              "mean_prob_attack": 0.8507590293884277,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "scanning",
+              "n_test": 33,
+              "roc_vs_benign": 0.8909090909090909,
+              "pr_vs_benign": 0.8618333634429833,
+              "mean_prob_attack": 0.48904916644096375,
+              "recall_at_thr": 0.5757575757575758,
+              "missed_at_thr": 14
+            },
+            {
+              "class": "ransomware",
+              "n_test": 3,
+              "roc_vs_benign": 0.7185185185185186,
+              "pr_vs_benign": 0.5256410256410257,
+              "mean_prob_attack": 0.4523395597934723,
+              "recall_at_thr": 0.6666666666666666,
+              "missed_at_thr": 1
+            }
+          ],
+          "best_epoch": 67,
+          "finetune": true,
+          "source": "phase3_report.json"
+        },
+        "frozen_ensemble": {
+          "roc": 0.9872502529954353,
+          "pr": 0.9983728773837611,
+          "f1": 0.9749207264341309,
+          "fpr": 0.08387096774193549,
+          "fnr": 0.038384987205004266,
+          "macro_f1": 0.8577751180728249,
+          "weighted_f1": NaN,
+          "tn": 426,
+          "fp": 39,
+          "fn": 135,
+          "tp": 3382,
+          "threshold_sweep": {
+            "f1_optimal": {
+              "thr": 0.4034850299358368,
+              "roc": 0.9872502529954353,
+              "pr": 0.9983728773837611,
+              "f1": 0.9749207264341309,
+              "fpr": 0.08387096774193549,
+              "fnr": 0.038384987205004266,
+              "tn": 426,
+              "fp": 39,
+              "fn": 135,
+              "tp": 3382,
+              "macro_f1": 0.8577751180728249
+            },
+            "balanced": {
+              "thr": 0.5605787038803101,
+              "roc": 0.9872502529954353,
+              "pr": 0.9983728773837611,
+              "f1": 0.9670811997073885,
+              "fpr": 0.02795698924731183,
+              "fnr": 0.060278646573784476,
+              "tn": 452,
+              "fp": 13,
+              "fn": 212,
+              "tp": 3305,
+              "macro_f1": 0.8577751180728249
+            },
+            "prior_matched": {
+              "thr": 0.33427944779396057,
+              "roc": 0.9872502529954353,
+              "pr": 0.9983728773837611,
+              "f1": 0.9772824689241321,
+              "fpr": 0.13333333333333333,
+              "fnr": 0.027580324139891952,
+              "tn": 403,
+              "fp": 62,
+              "fn": 97,
+              "tp": 3420,
+              "macro_f1": 0.8577751180728249
+            }
+          },
+          "per_class": [
+            {
+              "class": "ddos",
+              "n_test": 529,
+              "roc_vs_benign": 1.0,
+              "pr_vs_benign": 1.0,
+              "mean_prob_attack": 0.962909996509552,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "password",
+              "n_test": 610,
+              "roc_vs_benign": 1.0,
+              "pr_vs_benign": 0.9999999999999999,
+              "mean_prob_attack": 0.9746853113174438,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "xss",
+              "n_test": 334,
+              "roc_vs_benign": 1.0,
+              "pr_vs_benign": 1.0,
+              "mean_prob_attack": 0.9546205401420593,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "dos",
+              "n_test": 378,
+              "roc_vs_benign": 0.9999772429879957,
+              "pr_vs_benign": 0.9999722984016177,
+              "mean_prob_attack": 0.9548802971839905,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "Backdoor",
+              "n_test": 1167,
+              "roc_vs_benign": 0.993854290479218,
+              "pr_vs_benign": 0.9980409119647463,
+              "mean_prob_attack": 0.9298049807548523,
+              "recall_at_thr": 0.9897172236503856,
+              "missed_at_thr": 12
+            },
+            {
+              "class": "injection",
+              "n_test": 135,
+              "roc_vs_benign": 0.9892154520111509,
+              "pr_vs_benign": 0.9684451245237754,
+              "mean_prob_attack": 0.8171298503875732,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "ransomware",
+              "n_test": 24,
+              "roc_vs_benign": 0.9349462365591398,
+              "pr_vs_benign": 0.6267469163892134,
+              "mean_prob_attack": 0.6254544258117676,
+              "recall_at_thr": 0.9166666666666666,
+              "missed_at_thr": 2
+            },
+            {
+              "class": "mitm",
+              "n_test": 18,
+              "roc_vs_benign": 0.933811230585424,
+              "pr_vs_benign": 0.4009074456348911,
+              "mean_prob_attack": 0.5266397595405579,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "scanning",
+              "n_test": 322,
+              "roc_vs_benign": 0.8960996460295196,
+              "pr_vs_benign": 0.8715405983691407,
+              "mean_prob_attack": 0.553522527217865,
+              "recall_at_thr": 0.8478260869565217,
+              "missed_at_thr": 49
+            }
+          ],
+          "best_epoch": null,
+          "finetune": false,
+          "source": "phase3_report.json"
+        }
+      },
+      "moco": {
+        "frozen_single": {
+          "roc": 0.9849896508815859,
+          "pr": 0.99802570874279,
+          "f1": 0.9718840579710145,
+          "fpr": 0.06451612903225806,
+          "fnr": 0.04663065112311629,
+          "macro_f1": 0.869188732723965,
+          "weighted_f1": NaN,
+          "tn": 435,
+          "fp": 30,
+          "fn": 164,
+          "tp": 3353,
+          "threshold_sweep": {
+            "f1_optimal": {
+              "thr": 0.5170146822929382,
+              "roc": 0.9849896508815859,
+              "pr": 0.99802570874279,
+              "f1": 0.9718840579710145,
+              "fpr": 0.06451612903225806,
+              "fnr": 0.04663065112311629,
+              "tn": 435,
+              "fp": 30,
+              "fn": 164,
+              "tp": 3353,
+              "macro_f1": 0.869188732723965
+            },
+            "balanced": {
+              "thr": 0.7163940668106079,
+              "roc": 0.9849896508815859,
+              "pr": 0.99802570874279,
+              "f1": 0.9573431734317344,
+              "fpr": 0.03225806451612903,
+              "fnr": 0.07790730736423088,
+              "tn": 450,
+              "fp": 15,
+              "fn": 274,
+              "tp": 3243,
+              "macro_f1": 0.869188732723965
+            },
+            "prior_matched": {
+              "thr": 0.3836555480957031,
+              "roc": 0.9849896508815859,
+              "pr": 0.99802570874279,
+              "f1": 0.9739404352806414,
+              "fpr": 0.14193548387096774,
+              "fnr": 0.03298265567244811,
+              "tn": 399,
+              "fp": 66,
+              "fn": 116,
+              "tp": 3401,
+              "macro_f1": 0.869188732723965
+            }
+          },
+          "per_class": [
+            {
+              "class": "ddos",
+              "n_test": 529,
+              "roc_vs_benign": 1.0,
+              "pr_vs_benign": 1.0,
+              "mean_prob_attack": 0.9807729125022888,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "password",
+              "n_test": 610,
+              "roc_vs_benign": 0.9999753216992773,
+              "pr_vs_benign": 0.9999811876791749,
+              "mean_prob_attack": 0.9791409969329834,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "xss",
+              "n_test": 334,
+              "roc_vs_benign": 0.9992724228961433,
+              "pr_vs_benign": 0.998875019128592,
+              "mean_prob_attack": 0.942334771156311,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "dos",
+              "n_test": 378,
+              "roc_vs_benign": 0.9975991352335438,
+              "pr_vs_benign": 0.9959063402566083,
+              "mean_prob_attack": 0.9336472153663635,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "Backdoor",
+              "n_test": 1167,
+              "roc_vs_benign": 0.9967290451576047,
+              "pr_vs_benign": 0.9987611583691587,
+              "mean_prob_attack": 0.9493824243545532,
+              "recall_at_thr": 0.9948586118251928,
+              "missed_at_thr": 6
+            },
+            {
+              "class": "injection",
+              "n_test": 135,
+              "roc_vs_benign": 0.9861887694145759,
+              "pr_vs_benign": 0.9378588722474709,
+              "mean_prob_attack": 0.8664643168449402,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "ransomware",
+              "n_test": 24,
+              "roc_vs_benign": 0.957168458781362,
+              "pr_vs_benign": 0.3644952971874579,
+              "mean_prob_attack": 0.6901888847351074,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "mitm",
+              "n_test": 18,
+              "roc_vs_benign": 0.9542413381123058,
+              "pr_vs_benign": 0.4314554499208109,
+              "mean_prob_attack": 0.7625253796577454,
+              "recall_at_thr": 0.8888888888888888,
+              "missed_at_thr": 2
+            },
+            {
+              "class": "scanning",
+              "n_test": 322,
+              "roc_vs_benign": 0.8630601749816336,
+              "pr_vs_benign": 0.787642523486911,
+              "mean_prob_attack": 0.5488578081130981,
+              "recall_at_thr": 0.6645962732919255,
+              "missed_at_thr": 108
+            }
+          ],
+          "best_epoch": 292,
+          "finetune": false,
+          "source": "phase3_report.json"
+        },
+        "finetune_single": {
+          "roc": 0.9844533922789768,
+          "pr": 0.9979872188819816,
+          "f1": 0.9727803904802622,
+          "fpr": 0.1870967741935484,
+          "fnr": 0.029570656809781062,
+          "macro_f1": 0.8127106343404803,
+          "weighted_f1": NaN,
+          "tn": 378,
+          "fp": 87,
+          "fn": 104,
+          "tp": 3413,
+          "threshold_sweep": {
+            "f1_optimal": {
+              "thr": 0.1831093281507492,
+              "roc": 0.9844533922789768,
+              "pr": 0.9979872188819816,
+              "f1": 0.9727803904802622,
+              "fpr": 0.1870967741935484,
+              "fnr": 0.029570656809781062,
+              "tn": 378,
+              "fp": 87,
+              "fn": 104,
+              "tp": 3413,
+              "macro_f1": 0.8127106343404803
+            },
+            "balanced": {
+              "thr": 0.705903947353363,
+              "roc": 0.9844533922789768,
+              "pr": 0.9979872188819816,
+              "f1": 0.9472583295980875,
+              "fpr": 0.012903225806451613,
+              "fnr": 0.09866363377878874,
+              "tn": 459,
+              "fp": 6,
+              "fn": 347,
+              "tp": 3170,
+              "macro_f1": 0.8127106343404803
+            },
+            "prior_matched": {
+              "thr": 0.21325530111789703,
+              "roc": 0.9844533922789768,
+              "pr": 0.9979872188819816,
+              "f1": 0.9727481353987378,
+              "fpr": 0.13763440860215054,
+              "fnr": 0.03582598805800398,
+              "tn": 401,
+              "fp": 64,
+              "fn": 126,
+              "tp": 3391,
+              "macro_f1": 0.8127106343404803
+            }
+          },
+          "per_class": [
+            {
+              "class": "ddos",
+              "n_test": 53,
+              "roc_vs_benign": 1.0,
+              "pr_vs_benign": 0.9999999999999999,
+              "mean_prob_attack": 0.9758267402648926,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "dos",
+              "n_test": 38,
+              "roc_vs_benign": 1.0,
+              "pr_vs_benign": 0.9999999999999999,
+              "mean_prob_attack": 0.9455773234367371,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "password",
+              "n_test": 62,
+              "roc_vs_benign": 1.0,
+              "pr_vs_benign": 1.0,
+              "mean_prob_attack": 0.9813926219940186,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "xss",
+              "n_test": 34,
+              "roc_vs_benign": 1.0,
+              "pr_vs_benign": 1.0,
+              "mean_prob_attack": 0.9693214297294617,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "Backdoor",
+              "n_test": 117,
+              "roc_vs_benign": 0.9984805318138652,
+              "pr_vs_benign": 0.9994083749415348,
+              "mean_prob_attack": 0.9103803634643555,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "injection",
+              "n_test": 14,
+              "roc_vs_benign": 0.9952380952380953,
+              "pr_vs_benign": 0.9846415489272632,
+              "mean_prob_attack": 0.8917760848999023,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "mitm",
+              "n_test": 1,
+              "roc_vs_benign": 0.9555555555555556,
+              "pr_vs_benign": 0.3333333333333333,
+              "mean_prob_attack": 0.5656082034111023,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "ransomware",
+              "n_test": 3,
+              "roc_vs_benign": 0.888888888888889,
+              "pr_vs_benign": 0.49999999999999994,
+              "mean_prob_attack": 0.41736769676208496,
+              "recall_at_thr": 0.3333333333333333,
+              "missed_at_thr": 2
+            },
+            {
+              "class": "scanning",
+              "n_test": 33,
+              "roc_vs_benign": 0.8303030303030303,
+              "pr_vs_benign": 0.7939865737998946,
+              "mean_prob_attack": 0.3819320797920227,
+              "recall_at_thr": 0.45454545454545453,
+              "missed_at_thr": 18
+            }
+          ],
+          "best_epoch": 39,
+          "finetune": true,
+          "source": "phase3_report.json"
+        },
+        "frozen_ensemble": {
+          "roc": 0.9879834047223777,
+          "pr": 0.9984387638011555,
+          "f1": 0.9738477098685161,
+          "fpr": 0.07311827956989247,
+          "fnr": 0.04179698606767131,
+          "macro_f1": 0.8826259783329963,
+          "weighted_f1": NaN,
+          "tn": 431,
+          "fp": 34,
+          "fn": 147,
+          "tp": 3370,
+          "threshold_sweep": {
+            "f1_optimal": {
+              "thr": 0.4199386537075043,
+              "roc": 0.9879834047223777,
+              "pr": 0.9984387638011555,
+              "f1": 0.9738477098685161,
+              "fpr": 0.07311827956989247,
+              "fnr": 0.04179698606767131,
+              "tn": 431,
+              "fp": 34,
+              "fn": 147,
+              "tp": 3370,
+              "macro_f1": 0.8826259783329963
+            },
+            "balanced": {
+              "thr": 0.6391257643699646,
+              "roc": 0.9879834047223777,
+              "pr": 0.9984387638011555,
+              "f1": 0.9661736711085078,
+              "fpr": 0.02795698924731183,
+              "fnr": 0.061984646005118,
+              "tn": 452,
+              "fp": 13,
+              "fn": 218,
+              "tp": 3299,
+              "macro_f1": 0.8826259783329963
+            },
+            "prior_matched": {
+              "thr": 0.3595624566078186,
+              "roc": 0.9879834047223777,
+              "pr": 0.9984387638011555,
+              "f1": 0.9763644177051999,
+              "fpr": 0.12043010752688173,
+              "fnr": 0.030992323002559,
+              "tn": 409,
+              "fp": 56,
+              "fn": 109,
+              "tp": 3408,
+              "macro_f1": 0.8826259783329963
+            }
+          },
+          "per_class": [
+            {
+              "class": "ddos",
+              "n_test": 529,
+              "roc_vs_benign": 1.0,
+              "pr_vs_benign": 1.0,
+              "mean_prob_attack": 0.98035728931427,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "dos",
+              "n_test": 378,
+              "roc_vs_benign": 1.0,
+              "pr_vs_benign": 1.0,
+              "mean_prob_attack": 0.9423559308052063,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "password",
+              "n_test": 610,
+              "roc_vs_benign": 1.0,
+              "pr_vs_benign": 1.0,
+              "mean_prob_attack": 0.965925395488739,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "xss",
+              "n_test": 334,
+              "roc_vs_benign": 0.9999678063228382,
+              "pr_vs_benign": 0.9999553127748231,
+              "mean_prob_attack": 0.9245139360427856,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "Backdoor",
+              "n_test": 1167,
+              "roc_vs_benign": 0.9974403626613594,
+              "pr_vs_benign": 0.9990402724681176,
+              "mean_prob_attack": 0.9345223903656006,
+              "recall_at_thr": 0.9965724078834619,
+              "missed_at_thr": 4
+            },
+            {
+              "class": "injection",
+              "n_test": 135,
+              "roc_vs_benign": 0.9877339705296695,
+              "pr_vs_benign": 0.9572261400138143,
+              "mean_prob_attack": 0.8165441155433655,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "ransomware",
+              "n_test": 24,
+              "roc_vs_benign": 0.9485663082437276,
+              "pr_vs_benign": 0.38458453733808695,
+              "mean_prob_attack": 0.6046426892280579,
+              "recall_at_thr": 1.0,
+              "missed_at_thr": 0
+            },
+            {
+              "class": "mitm",
+              "n_test": 18,
+              "roc_vs_benign": 0.9452807646356033,
+              "pr_vs_benign": 0.4916083543443634,
+              "mean_prob_attack": 0.7141881585121155,
+              "recall_at_thr": 0.8333333333333334,
+              "missed_at_thr": 3
+            },
+            {
+              "class": "scanning",
+              "n_test": 322,
+              "roc_vs_benign": 0.8900487544246309,
+              "pr_vs_benign": 0.8535107814747769,
+              "mean_prob_attack": 0.5794358253479004,
+              "recall_at_thr": 0.8354037267080745,
+              "missed_at_thr": 53
+            }
+          ],
+          "best_epoch": null,
+          "finetune": false,
+          "source": "phase3_report.json"
+        }
+      }
+    }
+  }
+}

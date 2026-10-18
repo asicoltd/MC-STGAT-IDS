@@ -1,0 +1,62 @@
+{
+  "Gotham IoT": {
+    "Gotham IoT": {
+      "roc_auc": 1.0,
+      "pr_auc": 0.9999,
+      "f1": 0.9958,
+      "eval_threshold": 0.3247
+    },
+    "NF-ToN-IoT-v3": {
+      "roc_auc": 0.0764,
+      "pr_auc": 0.735,
+      "f1": 0.1322,
+      "eval_threshold": 0.3247
+    },
+    "NF-BoT-IoT-v3": {
+      "roc_auc": 0.6322,
+      "pr_auc": 0.755,
+      "f1": 0.7526,
+      "eval_threshold": 0.3247
+    }
+  },
+  "NF-ToN-IoT-v3": {
+    "Gotham IoT": {
+      "roc_auc": 0.272,
+      "pr_auc": 0.1903,
+      "f1": 0.2574,
+      "eval_threshold": 0.494
+    },
+    "NF-ToN-IoT-v3": {
+      "roc_auc": 0.9847,
+      "pr_auc": 0.9979,
+      "f1": 0.9775,
+      "eval_threshold": 0.494
+    },
+    "NF-BoT-IoT-v3": {
+      "roc_auc": 0.1013,
+      "pr_auc": 0.5251,
+      "f1": 0.8006,
+      "eval_threshold": 0.494
+    }
+  },
+  "NF-BoT-IoT-v3": {
+    "Gotham IoT": {
+      "roc_auc": 0.4351,
+      "pr_auc": 0.3228,
+      "f1": 0.1406,
+      "eval_threshold": 0.7955
+    },
+    "NF-ToN-IoT-v3": {
+      "roc_auc": 0.9117,
+      "pr_auc": 0.9869,
+      "f1": 0.9415,
+      "eval_threshold": 0.7955
+    },
+    "NF-BoT-IoT-v3": {
+      "roc_auc": 0.7499,
+      "pr_auc": 0.8023,
+      "f1": 0.7605,
+      "eval_threshold": 0.7955
+    }
+  }
+}

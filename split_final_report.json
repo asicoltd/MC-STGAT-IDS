@@ -1,0 +1,158 @@
+{
+  "gotham": {
+    "block_sec": 3600,
+    "block_source": "manual override",
+    "n_train": 2680,
+    "n_val": 568,
+    "n_test": 591,
+    "robust": "6/6",
+    "ratio_err": 0.00789268038551702,
+    "per_class": {
+      "Benign": [
+        1894,
+        339,
+        404
+      ],
+      "CoAP Amplification": [
+        0,
+        0,
+        2
+      ],
+      "Merlin": [
+        273,
+        65,
+        66
+      ],
+      "Mirai": [
+        298,
+        82,
+        75
+      ],
+      "TCP Scan": [
+        53,
+        30,
+        9
+      ],
+      "Telnet Brute Force": [
+        21,
+        22,
+        12
+      ],
+      "UDP Scan": [
+        141,
+        30,
+        23
+      ]
+    },
+    "missing_train": [
+      "CoAP Amplification"
+    ],
+    "missing_val": [
+      "CoAP Amplification"
+    ],
+    "missing_test": []
+  },
+  "nf_ton": {
+    "block_sec": 3600,
+    "block_source": "manual override",
+    "n_train": 22643,
+    "n_val": 4822,
+    "n_test": 4937,
+    "robust": "10/10",
+    "ratio_err": 0.004734275661996079,
+    "per_class": {
+      "Backdoor": [
+        6272,
+        1350,
+        1410
+      ],
+      "Benign": [
+        2443,
+        670,
+        617
+      ],
+      "ddos": [
+        3024,
+        642,
+        664
+      ],
+      "dos": [
+        2106,
+        448,
+        459
+      ],
+      "injection": [
+        867,
+        155,
+        181
+      ],
+      "mitm": [
+        318,
+        65,
+        32
+      ],
+      "password": [
+        3399,
+        730,
+        745
+      ],
+      "ransomware": [
+        262,
+        29,
+        27
+      ],
+      "scanning": [
+        2066,
+        330,
+        391
+      ],
+      "xss": [
+        1886,
+        403,
+        411
+      ]
+    },
+    "missing_train": [],
+    "missing_val": [],
+    "missing_test": []
+  },
+  "nf_bot": {
+    "block_sec": 3600,
+    "block_source": "manual override",
+    "n_train": 5013,
+    "n_val": 1063,
+    "n_test": 1103,
+    "robust": "5/5",
+    "ratio_err": 0.007285137205738895,
+    "per_class": {
+      "Benign": [
+        562,
+        364,
+        373
+      ],
+      "DDoS": [
+        260,
+        57,
+        39
+      ],
+      "DoS": [
+        283,
+        61,
+        42
+      ],
+      "Reconnaissance": [
+        3827,
+        565,
+        630
+      ],
+      "Theft": [
+        81,
+        16,
+        19
+      ]
+    },
+    "missing_train": [],
+    "missing_val": [],
+    "missing_test": []
+  }
+}

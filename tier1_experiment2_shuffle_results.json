@@ -1,0 +1,44 @@
+{
+  "Gotham IoT": {
+    "orig_roc": 1.0,
+    "shuff_roc": 0.9099,
+    "delta_roc": -0.0901,
+    "orig_f1": 0.9958,
+    "shuff_f1": 0.8226,
+    "delta_f1": -0.1732,
+    "orig_macro_f1": 0.715,
+    "shuff_macro_f1": 0.4393,
+    "delta_macro_f1": -0.2757,
+    "orig_entropy": 1.6338,
+    "shuff_entropy": 1.6321,
+    "delta_entropy": -0.0017
+  },
+  "NF-ToN-IoT-v3": {
+    "orig_roc": 0.9847,
+    "shuff_roc": 0.9791,
+    "delta_roc": -0.0056,
+    "orig_f1": 0.9775,
+    "shuff_f1": 0.9739,
+    "delta_f1": -0.0036,
+    "orig_macro_f1": 0.8102,
+    "shuff_macro_f1": 0.7611,
+    "delta_macro_f1": -0.0492,
+    "orig_entropy": 1.219,
+    "shuff_entropy": 1.2166,
+    "delta_entropy": -0.0023
+  },
+  "NF-BoT-IoT-v3": {
+    "orig_roc": 0.7499,
+    "shuff_roc": 0.7203,
+    "delta_roc": -0.0297,
+    "orig_f1": 0.7605,
+    "shuff_f1": 0.7458,
+    "delta_f1": -0.0147,
+    "orig_macro_f1": 0.5337,
+    "shuff_macro_f1": 0.4933,
+    "delta_macro_f1": -0.0404,
+    "orig_entropy": 1.5526,
+    "shuff_entropy": 1.5534,
+    "delta_entropy": 0.0008
+  }
+}

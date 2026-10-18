@@ -1,0 +1,1379 @@
+[
+  {
+    "name": "Loss: w_multi=0.5",
+    "hparams": {
+      "tft_hidden": 384,
+      "num_heads": 2,
+      "dropout": 0.1,
+      "lr": 0.001,
+      "weight_decay": 0.001,
+      "w_multi": 0.5,
+      "pos_weight": 3.0,
+      "focal_alpha": 0.25,
+      "focal_gamma": 2.0,
+      "batch_size": 512,
+      "use_balanced_sampler": false,
+      "priority": [
+        "roc",
+        "macro_f1_merged",
+        "pr",
+        "f1"
+      ],
+      "epochs": 100,
+      "patience": 25,
+      "warmup": 5,
+      "name": "Loss: w_multi=0.5"
+    },
+    "best_epoch": 40,
+    "total_epochs": 65,
+    "elapsed_sec": 26.113107919692993,
+    "val_metrics": {
+      "roc": 0.8867502446753972,
+      "pr": 0.9389311793698368,
+      "f1": 0.7685185185185185,
+      "macro_f1_merged": 0.5081896586143777,
+      "weighted_f1": 0.5705412102726047
+    },
+    "threshold": 0.7416619062423706,
+    "composite": 0.776700972417363,
+    "test_metrics": {
+      "roc": 0.8063548293811452,
+      "pr": 0.8534909207504111,
+      "f1": 0.7664092664092664,
+      "fpr": 0.31983805668016196,
+      "fnr": 0.2910714285714286,
+      "macro_f1": 0.711196531214597,
+      "weighted_f1": 0.8482454423019105,
+      "tp": 397,
+      "fn": 163,
+      "tn": 168,
+      "fp": 79
+    },
+    "per_class": [
+      {
+        "class": "DDoS",
+        "n_test": 18,
+        "roc_vs_benign": 1.0,
+        "pr_vs_benign": 1.0,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "DoS",
+        "n_test": 19,
+        "roc_vs_benign": 1.0,
+        "pr_vs_benign": 1.0,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "Theft",
+        "n_test": 7,
+        "roc_vs_benign": 0.9652978600347021,
+        "pr_vs_benign": 0.46100923127871835,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "Reconnaissance",
+        "n_test": 516,
+        "roc_vs_benign": 0.7903132159558108,
+        "pr_vs_benign": 0.8000819932543671,
+        "recall_at_thr": 0.6841085271317829
+      }
+    ]
+  },
+  {
+    "name": "Reg: weight_decay=5e-3",
+    "hparams": {
+      "tft_hidden": 384,
+      "num_heads": 2,
+      "dropout": 0.1,
+      "lr": 0.001,
+      "weight_decay": 0.005,
+      "w_multi": 1.0,
+      "pos_weight": 3.0,
+      "focal_alpha": 0.25,
+      "focal_gamma": 2.0,
+      "batch_size": 512,
+      "use_balanced_sampler": false,
+      "priority": [
+        "roc",
+        "macro_f1_merged",
+        "pr",
+        "f1"
+      ],
+      "epochs": 100,
+      "patience": 25,
+      "warmup": 5,
+      "name": "Reg: weight_decay=5e-3"
+    },
+    "best_epoch": 55,
+    "total_epochs": 80,
+    "elapsed_sec": 33.09155631065369,
+    "val_metrics": {
+      "roc": 0.8633146692055207,
+      "pr": 0.9261477814803728,
+      "f1": 0.7700617283950617,
+      "macro_f1_merged": 0.43043041555049727,
+      "weighted_f1": 0.45810195078015725
+    },
+    "threshold": 0.7620894908905029,
+    "composite": 0.7666716654273489,
+    "test_metrics": {
+      "roc": 0.8322440717177559,
+      "pr": 0.8707366534776871,
+      "f1": 0.7795918367346939,
+      "fpr": 0.15384615384615385,
+      "fnr": 0.31785714285714284,
+      "macro_f1": 0.5705414081477478,
+      "weighted_f1": 0.5939955507147271,
+      "tp": 382,
+      "fn": 178,
+      "tn": 209,
+      "fp": 38
+    },
+    "per_class": [
+      {
+        "class": "DDoS",
+        "n_test": 18,
+        "roc_vs_benign": 1.0,
+        "pr_vs_benign": 1.0,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "DoS",
+        "n_test": 19,
+        "roc_vs_benign": 1.0,
+        "pr_vs_benign": 1.0,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "Reconnaissance",
+        "n_test": 516,
+        "roc_vs_benign": 0.821352352258105,
+        "pr_vs_benign": 0.8286379503289591,
+        "recall_at_thr": 0.6589147286821705
+      },
+      {
+        "class": "Theft",
+        "n_test": 7,
+        "roc_vs_benign": 0.7484094852515905,
+        "pr_vs_benign": 0.08500071135358811,
+        "recall_at_thr": 0.7142857142857143
+      }
+    ]
+  },
+  {
+    "name": "Reg: dropout=0.05",
+    "hparams": {
+      "tft_hidden": 384,
+      "num_heads": 2,
+      "dropout": 0.05,
+      "lr": 0.001,
+      "weight_decay": 0.001,
+      "w_multi": 1.0,
+      "pos_weight": 3.0,
+      "focal_alpha": 0.25,
+      "focal_gamma": 2.0,
+      "batch_size": 512,
+      "use_balanced_sampler": false,
+      "priority": [
+        "roc",
+        "macro_f1_merged",
+        "pr",
+        "f1"
+      ],
+      "epochs": 100,
+      "patience": 25,
+      "warmup": 5,
+      "name": "Reg: dropout=0.05"
+    },
+    "best_epoch": 44,
+    "total_epochs": 69,
+    "elapsed_sec": 27.613942623138428,
+    "val_metrics": {
+      "roc": 0.8770264782055808,
+      "pr": 0.9339245708307117,
+      "f1": 0.7682832948421863,
+      "macro_f1_merged": 0.47040831572431746,
+      "weighted_f1": 0.4409347719365648
+    },
+    "threshold": 0.7818922996520996,
+    "composite": 0.756558054257351,
+    "test_metrics": {
+      "roc": 0.8289762868710238,
+      "pr": 0.8598345035927908,
+      "f1": 0.7844311377245509,
+      "fpr": 0.19838056680161945,
+      "fnr": 0.2982142857142857,
+      "macro_f1": 0.5579208235090402,
+      "weighted_f1": 0.5630928165147406,
+      "tp": 393,
+      "fn": 167,
+      "tn": 198,
+      "fp": 49
+    },
+    "per_class": [
+      {
+        "class": "DoS",
+        "n_test": 19,
+        "roc_vs_benign": 1.0,
+        "pr_vs_benign": 1.0,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "DDoS",
+        "n_test": 18,
+        "roc_vs_benign": 0.9977507872244714,
+        "pr_vs_benign": 0.9752964426877471,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "Theft",
+        "n_test": 7,
+        "roc_vs_benign": 0.9155581260844419,
+        "pr_vs_benign": 0.1951270951270951,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "Reconnaissance",
+        "n_test": 516,
+        "roc_vs_benign": 0.8156168596805071,
+        "pr_vs_benign": 0.8128788467785644,
+        "recall_at_thr": 0.6763565891472868
+      }
+    ]
+  },
+  {
+    "name": "Focal: gamma=1.5",
+    "hparams": {
+      "tft_hidden": 384,
+      "num_heads": 2,
+      "dropout": 0.1,
+      "lr": 0.001,
+      "weight_decay": 0.001,
+      "w_multi": 1.0,
+      "pos_weight": 3.0,
+      "focal_alpha": 0.25,
+      "focal_gamma": 1.5,
+      "batch_size": 512,
+      "use_balanced_sampler": false,
+      "priority": [
+        "roc",
+        "macro_f1_merged",
+        "pr",
+        "f1"
+      ],
+      "epochs": 100,
+      "patience": 25,
+      "warmup": 5,
+      "name": "Focal: gamma=1.5"
+    },
+    "best_epoch": 49,
+    "total_epochs": 74,
+    "elapsed_sec": 30.180490970611572,
+    "val_metrics": {
+      "roc": 0.8699591874779459,
+      "pr": 0.9331406349044544,
+      "f1": 0.7694680030840401,
+      "macro_f1_merged": 0.45319179575583624,
+      "weighted_f1": 0.4453954705257198
+    },
+    "threshold": 0.8184349536895752,
+    "composite": 0.7564528562544653,
+    "test_metrics": {
+      "roc": 0.8125,
+      "pr": 0.8470335797519459,
+      "f1": 0.7835671342685371,
+      "fpr": 0.1902834008097166,
+      "fnr": 0.30178571428571427,
+      "macro_f1": 0.5867920594033096,
+      "weighted_f1": 0.5724410676794716,
+      "tp": 391,
+      "fn": 169,
+      "tn": 200,
+      "fp": 47
+    },
+    "per_class": [
+      {
+        "class": "DDoS",
+        "n_test": 18,
+        "roc_vs_benign": 0.9948268106162843,
+        "pr_vs_benign": 0.9191426029919321,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "DoS",
+        "n_test": 19,
+        "roc_vs_benign": 0.9923290006392499,
+        "pr_vs_benign": 0.8797086848027862,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "Theft",
+        "n_test": 7,
+        "roc_vs_benign": 0.9178716020821284,
+        "pr_vs_benign": 0.20276548847977416,
+        "recall_at_thr": 0.8571428571428571
+      },
+      {
+        "class": "Reconnaissance",
+        "n_test": 516,
+        "roc_vs_benign": 0.7980886922135393,
+        "pr_vs_benign": 0.7883629585777874,
+        "recall_at_thr": 0.6744186046511628
+      }
+    ]
+  },
+  {
+    "name": "Loss: w_multi=1.5",
+    "hparams": {
+      "tft_hidden": 384,
+      "num_heads": 2,
+      "dropout": 0.1,
+      "lr": 0.001,
+      "weight_decay": 0.001,
+      "w_multi": 1.5,
+      "pos_weight": 3.0,
+      "focal_alpha": 0.25,
+      "focal_gamma": 2.0,
+      "batch_size": 512,
+      "use_balanced_sampler": false,
+      "priority": [
+        "roc",
+        "macro_f1_merged",
+        "pr",
+        "f1"
+      ],
+      "epochs": 100,
+      "patience": 25,
+      "warmup": 5,
+      "name": "Loss: w_multi=1.5"
+    },
+    "best_epoch": 53,
+    "total_epochs": 78,
+    "elapsed_sec": 31.472492218017578,
+    "val_metrics": {
+      "roc": 0.886633732581442,
+      "pr": 0.938264760749684,
+      "f1": 0.7706563706563706,
+      "macro_f1_merged": 0.4727456268121606,
+      "weighted_f1": 0.46825063717087434
+    },
+    "threshold": 0.7649393677711487,
+    "composite": 0.7489193393404356,
+    "test_metrics": {
+      "roc": 0.8198308270676691,
+      "pr": 0.8248234102642675,
+      "f1": 0.788480635551142,
+      "fpr": 0.20242914979757085,
+      "fnr": 0.2910714285714286,
+      "macro_f1": 0.5824601526852331,
+      "weighted_f1": 0.7047845185738298,
+      "tp": 397,
+      "fn": 163,
+      "tn": 197,
+      "fp": 50
+    },
+    "per_class": [
+      {
+        "class": "DoS",
+        "n_test": 19,
+        "roc_vs_benign": 0.9659066695077775,
+        "pr_vs_benign": 0.5031674571946532,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "DDoS",
+        "n_test": 18,
+        "roc_vs_benign": 0.9523166891587944,
+        "pr_vs_benign": 0.4283024983348209,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "Theft",
+        "n_test": 7,
+        "roc_vs_benign": 0.8548293811451706,
+        "pr_vs_benign": 0.09594997089744989,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "Reconnaissance",
+        "n_test": 516,
+        "roc_vs_benign": 0.8093556790007218,
+        "pr_vs_benign": 0.78980811864325,
+        "recall_at_thr": 0.6841085271317829
+      }
+    ]
+  },
+  {
+    "name": "Opt: batch_size=256",
+    "hparams": {
+      "tft_hidden": 384,
+      "num_heads": 2,
+      "dropout": 0.1,
+      "lr": 0.001,
+      "weight_decay": 0.001,
+      "w_multi": 1.0,
+      "pos_weight": 3.0,
+      "focal_alpha": 0.25,
+      "focal_gamma": 2.0,
+      "batch_size": 256,
+      "use_balanced_sampler": false,
+      "priority": [
+        "roc",
+        "macro_f1_merged",
+        "pr",
+        "f1"
+      ],
+      "epochs": 100,
+      "patience": 25,
+      "warmup": 5,
+      "name": "Opt: batch_size=256"
+    },
+    "best_epoch": 13,
+    "total_epochs": 38,
+    "elapsed_sec": 23.411362648010254,
+    "val_metrics": {
+      "roc": 0.8703553285973941,
+      "pr": 0.9315584995136847,
+      "f1": 0.7691119691119691,
+      "macro_f1_merged": 0.4335149890356547,
+      "weighted_f1": 0.5364467807409234
+    },
+    "threshold": 0.7459790706634521,
+    "composite": 0.734678181598732,
+    "test_metrics": {
+      "roc": 0.7486842105263158,
+      "pr": 0.8194174599095977,
+      "f1": 0.7730769230769231,
+      "fpr": 0.3157894736842105,
+      "fnr": 0.28214285714285714,
+      "macro_f1": 0.6317538464312658,
+      "weighted_f1": 0.811299095614761,
+      "tp": 402,
+      "fn": 158,
+      "tn": 169,
+      "fp": 78
+    },
+    "per_class": [
+      {
+        "class": "DoS",
+        "n_test": 19,
+        "roc_vs_benign": 0.9997869166844235,
+        "pr_vs_benign": 0.9973684210526315,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "DDoS",
+        "n_test": 18,
+        "roc_vs_benign": 0.9997750787224471,
+        "pr_vs_benign": 0.9970760233918129,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "Theft",
+        "n_test": 7,
+        "roc_vs_benign": 0.9600925390399074,
+        "pr_vs_benign": 0.762087912087912,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "Reconnaissance",
+        "n_test": 516,
+        "roc_vs_benign": 0.7278112544330415,
+        "pr_vs_benign": 0.761864044792642,
+        "recall_at_thr": 0.6937984496124031
+      }
+    ]
+  },
+  {
+    "name": "Focal: gamma=1.0",
+    "hparams": {
+      "tft_hidden": 384,
+      "num_heads": 2,
+      "dropout": 0.1,
+      "lr": 0.001,
+      "weight_decay": 0.001,
+      "w_multi": 1.0,
+      "pos_weight": 3.0,
+      "focal_alpha": 0.25,
+      "focal_gamma": 1.0,
+      "batch_size": 512,
+      "use_balanced_sampler": false,
+      "priority": [
+        "roc",
+        "macro_f1_merged",
+        "pr",
+        "f1"
+      ],
+      "epochs": 100,
+      "patience": 25,
+      "warmup": 5,
+      "name": "Focal: gamma=1.0"
+    },
+    "best_epoch": 42,
+    "total_epochs": 67,
+    "elapsed_sec": 27.415496110916138,
+    "val_metrics": {
+      "roc": 0.8956584264875266,
+      "pr": 0.9451782043429793,
+      "f1": 0.7688751926040062,
+      "macro_f1_merged": 0.3441430090993419,
+      "weighted_f1": 0.4460181464972953
+    },
+    "threshold": 0.8632523417472839,
+    "composite": 0.7325387370789186,
+    "test_metrics": {
+      "roc": 0.8199031231925968,
+      "pr": 0.8452082545272287,
+      "f1": 0.7265135699373695,
+      "fpr": 0.20242914979757085,
+      "fnr": 0.37857142857142856,
+      "macro_f1": 0.5233411247710763,
+      "weighted_f1": 0.6185954417313557,
+      "tp": 348,
+      "fn": 212,
+      "tn": 197,
+      "fp": 50
+    },
+    "per_class": [
+      {
+        "class": "DoS",
+        "n_test": 19,
+        "roc_vs_benign": 0.995099083741743,
+        "pr_vs_benign": 0.9316858865771909,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "DDoS",
+        "n_test": 18,
+        "roc_vs_benign": 0.9869545659019343,
+        "pr_vs_benign": 0.8154498140588493,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "Theft",
+        "n_test": 7,
+        "roc_vs_benign": 0.8195488721804511,
+        "pr_vs_benign": 0.08031102103691731,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "Reconnaissance",
+        "n_test": 516,
+        "roc_vs_benign": 0.8076295389636883,
+        "pr_vs_benign": 0.7946366038900405,
+        "recall_at_thr": 0.5891472868217055
+      }
+    ]
+  },
+  {
+    "name": "Reg: dropout=0.20",
+    "hparams": {
+      "tft_hidden": 384,
+      "num_heads": 2,
+      "dropout": 0.2,
+      "lr": 0.001,
+      "weight_decay": 0.001,
+      "w_multi": 1.0,
+      "pos_weight": 3.0,
+      "focal_alpha": 0.25,
+      "focal_gamma": 2.0,
+      "batch_size": 512,
+      "use_balanced_sampler": false,
+      "priority": [
+        "roc",
+        "macro_f1_merged",
+        "pr",
+        "f1"
+      ],
+      "epochs": 100,
+      "patience": 25,
+      "warmup": 5,
+      "name": "Reg: dropout=0.20"
+    },
+    "best_epoch": 44,
+    "total_epochs": 69,
+    "elapsed_sec": 27.84905695915222,
+    "val_metrics": {
+      "roc": 0.8857682141692023,
+      "pr": 0.9386017922577854,
+      "f1": 0.7682832948421863,
+      "macro_f1_merged": 0.5642697087907103,
+      "weighted_f1": 0.4524989992515649
+    },
+    "threshold": 0.7768040299415588,
+    "composite": 0.7269650481582123,
+    "test_metrics": {
+      "roc": 0.7581477732793522,
+      "pr": 0.8256333458432921,
+      "f1": 0.741106719367589,
+      "fpr": 0.3117408906882591,
+      "fnr": 0.33035714285714285,
+      "macro_f1": 0.6022945032469192,
+      "weighted_f1": 0.5649521597308513,
+      "tp": 375,
+      "fn": 185,
+      "tn": 170,
+      "fp": 77
+    },
+    "per_class": [
+      {
+        "class": "DDoS",
+        "n_test": 18,
+        "roc_vs_benign": 1.0,
+        "pr_vs_benign": 1.0,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "DoS",
+        "n_test": 19,
+        "roc_vs_benign": 1.0,
+        "pr_vs_benign": 1.0,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "Theft",
+        "n_test": 7,
+        "roc_vs_benign": 0.8548293811451707,
+        "pr_vs_benign": 0.10287436518963612,
+        "recall_at_thr": 0.8571428571428571
+      },
+      {
+        "class": "Reconnaissance",
+        "n_test": 516,
+        "roc_vs_benign": 0.7394940840473276,
+        "pr_vs_benign": 0.7752188406142686,
+        "recall_at_thr": 0.6434108527131783
+      }
+    ]
+  },
+  {
+    "name": "Baseline (Current)",
+    "hparams": {
+      "tft_hidden": 384,
+      "num_heads": 2,
+      "dropout": 0.1,
+      "lr": 0.001,
+      "weight_decay": 0.001,
+      "w_multi": 1.0,
+      "pos_weight": 3.0,
+      "focal_alpha": 0.25,
+      "focal_gamma": 2.0,
+      "batch_size": 512,
+      "use_balanced_sampler": false,
+      "priority": [
+        "roc",
+        "macro_f1_merged",
+        "pr",
+        "f1"
+      ],
+      "epochs": 100,
+      "patience": 25,
+      "warmup": 5,
+      "name": "Baseline (Current)"
+    },
+    "best_epoch": 44,
+    "total_epochs": 69,
+    "elapsed_sec": 28.292441368103027,
+    "val_metrics": {
+      "roc": 0.8674525129994207,
+      "pr": 0.9267576254605163,
+      "f1": 0.7688751926040062,
+      "macro_f1_merged": 0.4781910111936222,
+      "weighted_f1": 0.4606738030246516
+    },
+    "threshold": 0.7877475619316101,
+    "composite": 0.7215949132848855,
+    "test_metrics": {
+      "roc": 0.7647231058415269,
+      "pr": 0.8207702715343943,
+      "f1": 0.7687804878048781,
+      "fpr": 0.2874493927125506,
+      "fnr": 0.29642857142857143,
+      "macro_f1": 0.5590739739746166,
+      "weighted_f1": 0.6566649199355971,
+      "tp": 394,
+      "fn": 166,
+      "tn": 176,
+      "fp": 71
+    },
+    "per_class": [
+      {
+        "class": "DoS",
+        "n_test": 19,
+        "roc_vs_benign": 1.0,
+        "pr_vs_benign": 1.0,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "DDoS",
+        "n_test": 18,
+        "roc_vs_benign": 0.9993252361673414,
+        "pr_vs_benign": 0.9913580246913583,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "Theft",
+        "n_test": 7,
+        "roc_vs_benign": 0.9577790630422208,
+        "pr_vs_benign": 0.2665548736977308,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "Reconnaissance",
+        "n_test": 516,
+        "roc_vs_benign": 0.7452570379436965,
+        "pr_vs_benign": 0.7578915888288076,
+        "recall_at_thr": 0.6782945736434108
+      }
+    ]
+  },
+  {
+    "name": "Focal: alpha=0.50",
+    "hparams": {
+      "tft_hidden": 384,
+      "num_heads": 2,
+      "dropout": 0.1,
+      "lr": 0.001,
+      "weight_decay": 0.001,
+      "w_multi": 1.0,
+      "pos_weight": 3.0,
+      "focal_alpha": 0.5,
+      "focal_gamma": 2.0,
+      "batch_size": 512,
+      "use_balanced_sampler": false,
+      "priority": [
+        "roc",
+        "macro_f1_merged",
+        "pr",
+        "f1"
+      ],
+      "epochs": 100,
+      "patience": 25,
+      "warmup": 5,
+      "name": "Focal: alpha=0.50"
+    },
+    "best_epoch": 50,
+    "total_epochs": 75,
+    "elapsed_sec": 30.65251612663269,
+    "val_metrics": {
+      "roc": 0.8832016191852143,
+      "pr": 0.9381342974047575,
+      "f1": 0.7706563706563706,
+      "macro_f1_merged": 0.4657664752144314,
+      "weighted_f1": 0.454854691169872
+    },
+    "threshold": 0.7404701113700867,
+    "composite": 0.7134629416964011,
+    "test_metrics": {
+      "roc": 0.7303643724696357,
+      "pr": 0.804865058980334,
+      "f1": 0.7613526570048309,
+      "fpr": 0.32793522267206476,
+      "fnr": 0.29642857142857143,
+      "macro_f1": 0.5924947038776825,
+      "weighted_f1": 0.6496141172404718,
+      "tp": 394,
+      "fn": 166,
+      "tn": 166,
+      "fp": 81
+    },
+    "per_class": [
+      {
+        "class": "DDoS",
+        "n_test": 18,
+        "roc_vs_benign": 1.0,
+        "pr_vs_benign": 1.0,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "DoS",
+        "n_test": 19,
+        "roc_vs_benign": 1.0,
+        "pr_vs_benign": 1.0,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "Theft",
+        "n_test": 7,
+        "roc_vs_benign": 0.9149797570850202,
+        "pr_vs_benign": 0.21515346611654798,
+        "recall_at_thr": 0.8571428571428571
+      },
+      {
+        "class": "Reconnaissance",
+        "n_test": 516,
+        "roc_vs_benign": 0.7085255625647302,
+        "pr_vs_benign": 0.7437324441323496,
+        "recall_at_thr": 0.6802325581395349
+      }
+    ]
+  },
+  {
+    "name": "Priority: PR-first",
+    "hparams": {
+      "tft_hidden": 384,
+      "num_heads": 2,
+      "dropout": 0.1,
+      "lr": 0.001,
+      "weight_decay": 0.001,
+      "w_multi": 1.0,
+      "pos_weight": 3.0,
+      "focal_alpha": 0.25,
+      "focal_gamma": 2.0,
+      "batch_size": 512,
+      "use_balanced_sampler": false,
+      "priority": [
+        "pr",
+        "macro_f1_merged",
+        "roc",
+        "f1"
+      ],
+      "epochs": 100,
+      "patience": 25,
+      "warmup": 5,
+      "name": "Priority: PR-first"
+    },
+    "best_epoch": 30,
+    "total_epochs": 55,
+    "elapsed_sec": 22.33340859413147,
+    "val_metrics": {
+      "roc": 0.8668166898581215,
+      "pr": 0.9294570254906568,
+      "f1": 0.7688751926040062,
+      "macro_f1_merged": 0.5276161565292,
+      "weighted_f1": 0.5179271194719565
+    },
+    "threshold": 0.7567989826202393,
+    "composite": 0.7128940715462003,
+    "test_metrics": {
+      "roc": 0.755414979757085,
+      "pr": 0.8243646554499203,
+      "f1": 0.7536800785083415,
+      "fpr": 0.30364372469635625,
+      "fnr": 0.3142857142857143,
+      "macro_f1": 0.540305560342073,
+      "weighted_f1": 0.7863070798994065,
+      "tp": 384,
+      "fn": 176,
+      "tn": 172,
+      "fp": 75
+    },
+    "per_class": [
+      {
+        "class": "DDoS",
+        "n_test": 18,
+        "roc_vs_benign": 1.0,
+        "pr_vs_benign": 1.0,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "DoS",
+        "n_test": 19,
+        "roc_vs_benign": 1.0,
+        "pr_vs_benign": 1.0,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "Theft",
+        "n_test": 7,
+        "roc_vs_benign": 0.8675534991324465,
+        "pr_vs_benign": 0.10381813038020682,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "Reconnaissance",
+        "n_test": 516,
+        "roc_vs_benign": 0.7363556476163575,
+        "pr_vs_benign": 0.7761208670173042,
+        "recall_at_thr": 0.6589147286821705
+      }
+    ]
+  },
+  {
+    "name": "Capacity: tft_hidden=256",
+    "hparams": {
+      "tft_hidden": 256,
+      "num_heads": 2,
+      "dropout": 0.1,
+      "lr": 0.001,
+      "weight_decay": 0.001,
+      "w_multi": 1.0,
+      "pos_weight": 3.0,
+      "focal_alpha": 0.25,
+      "focal_gamma": 2.0,
+      "batch_size": 512,
+      "use_balanced_sampler": false,
+      "priority": [
+        "roc",
+        "macro_f1_merged",
+        "pr",
+        "f1"
+      ],
+      "epochs": 100,
+      "patience": 25,
+      "warmup": 5,
+      "name": "Capacity: tft_hidden=256"
+    },
+    "best_epoch": 22,
+    "total_epochs": 47,
+    "elapsed_sec": 15.596848964691162,
+    "val_metrics": {
+      "roc": 0.8482180307458771,
+      "pr": 0.9192990670581773,
+      "f1": 0.7682832948421863,
+      "macro_f1_merged": 0.3733663932430979,
+      "weighted_f1": 0.44477259990149953
+    },
+    "threshold": 0.7936487197875977,
+    "composite": 0.7090163308195034,
+    "test_metrics": {
+      "roc": 0.7607938114517062,
+      "pr": 0.8207589703997341,
+      "f1": 0.7549407114624506,
+      "fpr": 0.2834008097165992,
+      "fnr": 0.31785714285714284,
+      "macro_f1": 0.5188708965865182,
+      "weighted_f1": 0.5556290884979773,
+      "tp": 382,
+      "fn": 178,
+      "tn": 177,
+      "fp": 70
+    },
+    "per_class": [
+      {
+        "class": "DoS",
+        "n_test": 19,
+        "roc_vs_benign": 0.9995738333688472,
+        "pr_vs_benign": 0.9945983379501384,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "DDoS",
+        "n_test": 18,
+        "roc_vs_benign": 0.99842555105713,
+        "pr_vs_benign": 0.978152591445935,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "Theft",
+        "n_test": 7,
+        "roc_vs_benign": 0.8554077501445921,
+        "pr_vs_benign": 0.09518950382362737,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "Reconnaissance",
+        "n_test": 516,
+        "roc_vs_benign": 0.7424285221102846,
+        "pr_vs_benign": 0.7659212426998812,
+        "recall_at_thr": 0.6550387596899225
+      }
+    ]
+  },
+  {
+    "name": "Opt: lr=5e-4",
+    "hparams": {
+      "tft_hidden": 384,
+      "num_heads": 2,
+      "dropout": 0.1,
+      "lr": 0.0005,
+      "weight_decay": 0.001,
+      "w_multi": 1.0,
+      "pos_weight": 3.0,
+      "focal_alpha": 0.25,
+      "focal_gamma": 2.0,
+      "batch_size": 512,
+      "use_balanced_sampler": false,
+      "priority": [
+        "roc",
+        "macro_f1_merged",
+        "pr",
+        "f1"
+      ],
+      "epochs": 100,
+      "patience": 25,
+      "warmup": 5,
+      "name": "Opt: lr=5e-4"
+    },
+    "best_epoch": 11,
+    "total_epochs": 36,
+    "elapsed_sec": 14.860554218292236,
+    "val_metrics": {
+      "roc": 0.8404450096205701,
+      "pr": 0.9148087145644006,
+      "f1": 0.7682832948421863,
+      "macro_f1_merged": 0.4506979990054549,
+      "weighted_f1": 0.4323010498608478
+    },
+    "threshold": 0.7714213132858276,
+    "composite": 0.6825230768432237,
+    "test_metrics": {
+      "roc": 0.7332779063042221,
+      "pr": 0.8045573619701247,
+      "f1": 0.7604267701260912,
+      "fpr": 0.31983805668016196,
+      "fnr": 0.3,
+      "macro_f1": 0.4650248982434073,
+      "weighted_f1": 0.5532298289707216,
+      "tp": 392,
+      "fn": 168,
+      "tn": 168,
+      "fp": 79
+    },
+    "per_class": [
+      {
+        "class": "DoS",
+        "n_test": 19,
+        "roc_vs_benign": 0.9995738333688472,
+        "pr_vs_benign": 0.9945983379501384,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "DDoS",
+        "n_test": 18,
+        "roc_vs_benign": 0.9995501574448943,
+        "pr_vs_benign": 0.9939896036387265,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "Reconnaissance",
+        "n_test": 516,
+        "roc_vs_benign": 0.7148808963374447,
+        "pr_vs_benign": 0.7451785587305702,
+        "recall_at_thr": 0.6782945736434108
+      },
+      {
+        "class": "Theft",
+        "n_test": 7,
+        "roc_vs_benign": 0.681897050318103,
+        "pr_vs_benign": 0.0474679461159504,
+        "recall_at_thr": 0.7142857142857143
+      }
+    ]
+  },
+  {
+    "name": "Sampler: Balanced=True",
+    "hparams": {
+      "tft_hidden": 384,
+      "num_heads": 2,
+      "dropout": 0.1,
+      "lr": 0.001,
+      "weight_decay": 0.001,
+      "w_multi": 1.0,
+      "pos_weight": 3.0,
+      "focal_alpha": 0.25,
+      "focal_gamma": 2.0,
+      "batch_size": 512,
+      "use_balanced_sampler": true,
+      "priority": [
+        "roc",
+        "macro_f1_merged",
+        "pr",
+        "f1"
+      ],
+      "epochs": 100,
+      "patience": 25,
+      "warmup": 5,
+      "name": "Sampler: Balanced=True"
+    },
+    "best_epoch": 6,
+    "total_epochs": 31,
+    "elapsed_sec": 12.546863555908203,
+    "val_metrics": {
+      "roc": 0.8622827049447732,
+      "pr": 0.9198134805249698,
+      "f1": 0.7682832948421863,
+      "macro_f1_merged": 0.3665396628275276,
+      "weighted_f1": 0.567320306602939
+    },
+    "threshold": 0.6248908042907715,
+    "composite": 0.6812173856336919,
+    "test_metrics": {
+      "roc": 0.7355624638519376,
+      "pr": 0.8153370788455498,
+      "f1": 0.764367816091954,
+      "fpr": 0.3441295546558704,
+      "fnr": 0.2875,
+      "macro_f1": 0.44759948293179586,
+      "weighted_f1": 0.8366417126269409,
+      "tp": 399,
+      "fn": 161,
+      "tn": 162,
+      "fp": 85
+    },
+    "per_class": [
+      {
+        "class": "DDoS",
+        "n_test": 18,
+        "roc_vs_benign": 1.0,
+        "pr_vs_benign": 1.0,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "DoS",
+        "n_test": 19,
+        "roc_vs_benign": 1.0,
+        "pr_vs_benign": 1.0,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "Reconnaissance",
+        "n_test": 516,
+        "roc_vs_benign": 0.7178781031290211,
+        "pr_vs_benign": 0.7635025830930797,
+        "recall_at_thr": 0.6996124031007752
+      },
+      {
+        "class": "Theft",
+        "n_test": 7,
+        "roc_vs_benign": 0.6414112203585889,
+        "pr_vs_benign": 0.040995159780671656,
+        "recall_at_thr": 0.14285714285714285
+      }
+    ]
+  },
+  {
+    "name": "Capacity: tft_hidden=128",
+    "hparams": {
+      "tft_hidden": 128,
+      "num_heads": 2,
+      "dropout": 0.1,
+      "lr": 0.001,
+      "weight_decay": 0.001,
+      "w_multi": 1.0,
+      "pos_weight": 3.0,
+      "focal_alpha": 0.25,
+      "focal_gamma": 2.0,
+      "batch_size": 512,
+      "use_balanced_sampler": false,
+      "priority": [
+        "roc",
+        "macro_f1_merged",
+        "pr",
+        "f1"
+      ],
+      "epochs": 100,
+      "patience": 25,
+      "warmup": 5,
+      "name": "Capacity: tft_hidden=128"
+    },
+    "best_epoch": 17,
+    "total_epochs": 42,
+    "elapsed_sec": 11.484152793884277,
+    "val_metrics": {
+      "roc": 0.8791802874852696,
+      "pr": 0.932872099995315,
+      "f1": 0.7682832948421863,
+      "macro_f1_merged": 0.39602362332367824,
+      "weighted_f1": 0.43496846449065335
+    },
+    "threshold": 0.8297209143638611,
+    "composite": 0.6792973992279143,
+    "test_metrics": {
+      "roc": 0.7115023134759977,
+      "pr": 0.7746920459975631,
+      "f1": 0.7431372549019608,
+      "fpr": 0.32793522267206476,
+      "fnr": 0.32321428571428573,
+      "macro_f1": 0.5238786850888106,
+      "weighted_f1": 0.5519605364616618,
+      "tp": 379,
+      "fn": 181,
+      "tn": 166,
+      "fp": 81
+    },
+    "per_class": [
+      {
+        "class": "DoS",
+        "n_test": 19,
+        "roc_vs_benign": 0.981461751544854,
+        "pr_vs_benign": 0.6903371590472989,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "DDoS",
+        "n_test": 18,
+        "roc_vs_benign": 0.97953216374269,
+        "pr_vs_benign": 0.7217505794262296,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "Reconnaissance",
+        "n_test": 516,
+        "roc_vs_benign": 0.6928098421366475,
+        "pr_vs_benign": 0.7205891984518038,
+        "recall_at_thr": 0.6627906976744186
+      },
+      {
+        "class": "Theft",
+        "n_test": 7,
+        "roc_vs_benign": 0.6674378253325622,
+        "pr_vs_benign": 0.045870617494579394,
+        "recall_at_thr": 0.0
+      }
+    ]
+  },
+  {
+    "name": "Loss: w_multi=0.2",
+    "hparams": {
+      "tft_hidden": 384,
+      "num_heads": 2,
+      "dropout": 0.1,
+      "lr": 0.001,
+      "weight_decay": 0.001,
+      "w_multi": 0.2,
+      "pos_weight": 3.0,
+      "focal_alpha": 0.25,
+      "focal_gamma": 2.0,
+      "batch_size": 512,
+      "use_balanced_sampler": false,
+      "priority": [
+        "roc",
+        "macro_f1_merged",
+        "pr",
+        "f1"
+      ],
+      "epochs": 100,
+      "patience": 25,
+      "warmup": 5,
+      "name": "Loss: w_multi=0.2"
+    },
+    "best_epoch": 12,
+    "total_epochs": 37,
+    "elapsed_sec": 15.02949571609497,
+    "val_metrics": {
+      "roc": 0.8311540023568732,
+      "pr": 0.9117128540610782,
+      "f1": 0.7688751926040062,
+      "macro_f1_merged": 0.25493321806458463,
+      "weighted_f1": 0.42184321412118003
+    },
+    "threshold": 0.6667793393135071,
+    "composite": 0.6767309357841561,
+    "test_metrics": {
+      "roc": 0.7443753614806247,
+      "pr": 0.8115899291954921,
+      "f1": 0.9317803660565723,
+      "fpr": 0.3319838056680162,
+      "fnr": 0.0,
+      "macro_f1": 0.30799107534564235,
+      "weighted_f1": 0.5634597266398239,
+      "tp": 560,
+      "fn": 0,
+      "tn": 165,
+      "fp": 82
+    },
+    "per_class": [
+      {
+        "class": "DoS",
+        "n_test": 19,
+        "roc_vs_benign": 0.9997869166844235,
+        "pr_vs_benign": 0.9973684210526315,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "DDoS",
+        "n_test": 18,
+        "roc_vs_benign": 0.9997750787224471,
+        "pr_vs_benign": 0.9970760233918129,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "Reconnaissance",
+        "n_test": 516,
+        "roc_vs_benign": 0.7269246461412925,
+        "pr_vs_benign": 0.7556237685741961,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "Theft",
+        "n_test": 7,
+        "roc_vs_benign": 0.6807403123192597,
+        "pr_vs_benign": 0.047447977685594514,
+        "recall_at_thr": 1.0
+      }
+    ]
+  },
+  {
+    "name": "Reg: weight_decay=1e-4",
+    "hparams": {
+      "tft_hidden": 384,
+      "num_heads": 2,
+      "dropout": 0.1,
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "w_multi": 1.0,
+      "pos_weight": 3.0,
+      "focal_alpha": 0.25,
+      "focal_gamma": 2.0,
+      "batch_size": 512,
+      "use_balanced_sampler": false,
+      "priority": [
+        "roc",
+        "macro_f1_merged",
+        "pr",
+        "f1"
+      ],
+      "epochs": 100,
+      "patience": 25,
+      "warmup": 5,
+      "name": "Reg: weight_decay=1e-4"
+    },
+    "best_epoch": 17,
+    "total_epochs": 42,
+    "elapsed_sec": 17.20772123336792,
+    "val_metrics": {
+      "roc": 0.86917356307299,
+      "pr": 0.931466266317927,
+      "f1": 0.7682832948421863,
+      "macro_f1_merged": 0.4207063410159385,
+      "weighted_f1": 0.4233078918701984
+    },
+    "threshold": 0.823851466178894,
+    "composite": 0.663629305179859,
+    "test_metrics": {
+      "roc": 0.7214502602660497,
+      "pr": 0.7917442406167905,
+      "f1": 0.7524366471734892,
+      "fpr": 0.32388663967611336,
+      "fnr": 0.3107142857142857,
+      "macro_f1": 0.4227554457992489,
+      "weighted_f1": 0.5456094344521961,
+      "tp": 386,
+      "fn": 174,
+      "tn": 167,
+      "fp": 80
+    },
+    "per_class": [
+      {
+        "class": "DoS",
+        "n_test": 19,
+        "roc_vs_benign": 0.9957383336884722,
+        "pr_vs_benign": 0.9366854961568247,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "DDoS",
+        "n_test": 18,
+        "roc_vs_benign": 0.9955015744489429,
+        "pr_vs_benign": 0.9406901620288348,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "Theft",
+        "n_test": 7,
+        "roc_vs_benign": 0.8542510121457488,
+        "pr_vs_benign": 0.09597505762460831,
+        "recall_at_thr": 1.0
+      },
+      {
+        "class": "Reconnaissance",
+        "n_test": 516,
+        "roc_vs_benign": 0.6999890154724917,
+        "pr_vs_benign": 0.7307370307909945,
+        "recall_at_thr": 0.6627906976744186
+      }
+    ]
+  }
+]
