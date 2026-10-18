@@ -35,3 +35,13 @@ Thumbs.db
 
 # Cross dataset exploratory notebook
 2_3_phase_SSL_cross_dataset.ipynb
+
+# Remakable JSON results
+*.json
+**/*.json
+
+# LaTeX build artifacts
+*.tex
+*.aux
+*.out
+*.toc
