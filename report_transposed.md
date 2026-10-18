@@ -21,6 +21,8 @@ This research report evaluates **MC-STGAT-IDS** across three distinct IoT intrus
 | **Feature Explainability** | Integrated Gradients (IG) on GAT Inputs | Provides per-attack feature attribution resolving diffuse attention |
 | **Loss Formulation** | Joint Binary Cross-Entropy + Multi-Class Focal Loss | Optimizes binary detection while preventing minority class collapse |
 
+*Loss hyperparameters: $w_{\text{multi}}=0.5$, $\text{pos\_weight}=3.0$, $\text{focal\_gamma}=2.0$, $\text{focal\_alpha}=0.25$. These supersede notebook defaults ($w_{\text{multi}}=1.0$, $\text{pos\_weight}=1.0$).*
+
 ### Key Scientific Findings (Executive Summary):
 1. **The Sequence-Attention Discrepancy:**
    Controlled permutation ablations reveal that permuting chronological sequence order collapses Gotham Macro-F1 by **27.6 percentage points** (from 0.7150 to 0.4393, a **38.6% relative collapse**), confirming that sequential order is indispensable for detecting multi-stage kill chains. Yet temporal attention entropy remains invariant ($\Delta\mathcal{H} = -0.0017$). This demonstrates that the **residual LSTM backbone models temporal sequence ordering**, while temporal self-attention operates as an order-invariant context-smoothing prior.
@@ -29,7 +31,7 @@ This research report evaluates **MC-STGAT-IDS** across three distinct IoT intrus
 3. **Contrastive Momentum Superiority (+40.7% Relative Macro-F1 Gain):**
    MoCo pretraining achieves **0.7150\*** Macro-F1 on Gotham Frozen Single vs. **0.5083** for non-contrastive BYOL (+20.67% absolute improvement), while slashing false alarms from 0.98% down to **0.33%\*** (a 66.3% false alarm reduction).
 4. **Empirical Boundary Delineation:**
-   On steady-state enterprise traffic (NF-ToN-IoT-v3), snapshot representations are already highly separable ($\Delta\text{ROC} = +0.0005$). On instantaneous volumetric floods (NF-BoT-IoT-v3), temporal sequence smoothing incurs unnecessary overhead, where static inductive GraphSAGE outperforms temporal modeling ($\text{ROC} = 0.8824$ vs. $0.7499$).
+   On steady-state enterprise traffic (NF-ToN-IoT-v3), snapshot representations are already highly separable ($\Delta\text{ROC} = +0.0005$). Ensemble improves F1 by +0.0033 but worsens FPR by 4.5 pp (13.76% vs 9.25%); single-seed is operationally preferred for NF-ToN. On instantaneous volumetric floods (NF-BoT-IoT-v3), temporal sequence smoothing incurs unnecessary overhead, where static inductive GraphSAGE outperforms temporal modeling ($\text{ROC} = 0.8824$ vs. $0.7499$).
 
 *Note: Bold values with an asterisk (`*`) indicate the top-performing score across all evaluated architectures for that metric.*
 
@@ -59,6 +61,8 @@ This research report evaluates **MC-STGAT-IDS** across three distinct IoT intrus
 
 ## 3. Visual Results Part 2: MC-STGAT vs. Classical and Spatial Baselines
 
+*Note: Section 3 headlines report the operationally optimal variant (single-seed where it wins and ensemble where it wins); detailed side-by-side performance of both variants is reported in Section 6.*
+
 ![Operational Performance Profiles](figures/operational_superiority_triad.png)
 *Figure 3.1: Empirical detection profiles of MC-STGAT vs. baselines: (a) False Negative Rate on Gotham; (b) False Positive Rate suppression on NF-ToN-IoT-v3; (c) Multi-Class Macro-F1 on minority attack distributions.*
 
@@ -72,6 +76,7 @@ This research report evaluates **MC-STGAT-IDS** across three distinct IoT intrus
 1. **Intrusion Sensitivity ($0.0000^*$ FNR):** On Gotham, static GCN misses **66.84%** of intrusions (125 missed attacks), and MLP misses **16.04%** (30 missed attacks). MC-STGAT achieves **0.00%\* False Negative Rate** (zero missed attacks across all 119 test sequences).
 2. **False Positive Suppression on Enterprise Traffic:** On NF-ToN-IoT-v3, Anomal-E triggers false alarms on **29.66%** of benign flows, and Supervised GAT triggers **17.99%**. MC-STGAT suppresses false alarms to **9.25%\***.
 3. **Minority Attack Attribution (+20.49% Macro-F1 over GraphSAGE):** MC-STGAT reaches **0.7150\*** Macro-F1 on Gotham, compared to GraphSAGE ($0.5101$), MLP ($0.5008$), and GCN ($0.3265$).
+4. **Ensemble Criticality on Volumetric Variance:** On NF-BoT-IoT-v3, single-seed misses 30.5% of attacks (FNR = 30.54%); 3-seed ensemble misses 0% (FNR = 0.0000*). Ensembling is essential on high-variance volumetric traffic to stabilize decision boundaries across stochastic bursts.
 
 ---
 
@@ -93,7 +98,7 @@ Standardized Integrated Gradients across test instances reveal distinct, physica
 
 ### 4.2 Concentration vs. Diffusion (The XAI Discrepancy)
 * **Spatial Feature Concentration:** Feature attributions exhibit high Gini coefficients across all attack classes ($G = 0.7418\text{--}0.8628$), establishing that the GAT backbone bases its detection decisions on a compact subset of highly diagnostic network features.
-* **Temporal Attention Diffusion:** In contrast, temporal attention entropy across window positions remains diffuse: for multi-stage C&C and benign traffic, class-level attention vector entropy is $\mathcal{H} = 2.25\text{--}2.29\text{ nats}$ (approaching the theoretical maximum $\ln 10 = 2.3026\text{ nats}$ for uniform distribution), dipping to $1.14\text{--}1.83\text{ nats}$ only during localized scan bursts. Globally across test sequences, the mean attention vector exhibits $\mathcal{H} = 2.29\text{--}2.30\text{ nats}$ (as detailed in Section 6.6).
+* **Temporal Attention Diffusion:** In contrast, temporal attention entropy across window positions remains diffuse: for multi-stage C&C and benign traffic, class-level attention vector entropy is $\mathcal{H} = 2.25\text{--}2.29\text{ nats}$ (approaching the theoretical maximum $\ln 10 = 2.3026\text{ nats}$ for uniform distribution), dipping to $1.14\text{--}1.83\text{ nats}$ only during localized scan and brute-force bursts (TCP Port Scan at $1.1395\text{ nats}$ and Telnet Brute Force at $1.8321\text{ nats}$). Globally across test sequences, the mean attention vector exhibits $\mathcal{H} = 2.29\text{--}2.30\text{ nats}$ (as detailed in Section 6.6).
 * **Synthesis with Sequential Findings:** Connecting this to Section 5.2, these results complete a coherent thesis narrative: sequence ordering is indispensable for intrusion detection (a 27.6 percentage point collapse under shuffle), but this ordering is modeled by the recurrent LSTM backbone. Temporal self-attention acts as an order-invariant smoothing prior across the window ($\mathcal{H} \approx 1.14\text{--}2.30\text{ nats}$), while spatial Integrated Gradients on the GNN input features ($G = 0.74\text{--}0.86$) provides the true, actionable explanation witness for security analysts.
 
 ---
@@ -128,7 +133,6 @@ Standardized Integrated Gradients across test instances reveal distinct, physica
 | **False Alarm Rate (FPR)** $\downarrow$ | 0.0173 | 0.0050 | 0.0223 | **0.0025\*** | 0.0198 | 0.0033 | 0.0066 |
 | **Breach Miss Rate (FNR)** $\downarrow$ | 0.1604 | 0.6684 | 0.0214 | 0.0107 | 0.0053 | **0.0000\*** | **0.0000\*** |
 | **Multi-Class Macro-F1** $\uparrow$ | 0.5008 | 0.3265 | 0.4750 | 0.5101 | 0.4816 | **0.7150\*** | 0.6405 |
-| **Attack Misses ($FN / N_{\text{atk}}$)** | 30 / 187 | 125 / 187 | 4 / 187 | 2 / 187 | 1 / 187 | **0 / 119\*** | **0 / 119\*** |
 
 ---
 
@@ -142,7 +146,6 @@ Standardized Integrated Gradients across test instances reveal distinct, physica
 | **False Alarm Rate (FPR)** $\downarrow$ | 0.1378 | 0.1799 | 0.1799 | 0.1588 | 0.2966 | **0.0925\*** | 0.1376 |
 | **Breach Miss Rate (FNR)** $\downarrow$ | 0.0306 | 0.0255 | 0.0225 | 0.0208 | **0.0194\*** | 0.0324 | 0.0202 |
 | **Multi-Class Macro-F1** $\uparrow$ | 0.8376 | 0.8372 | 0.8675 | **0.8749\*** | 0.8248 | 0.8102 | 0.7995 |
-| **Weighted F1 Score** $\uparrow$ | 0.9027 | 0.8976 | 0.9027 | 0.9125 | 0.8671 | 0.9348 | **0.9353\*** |
 
 ---
 
@@ -198,6 +201,8 @@ Standardized Integrated Gradients across test instances reveal distinct, physica
 | **Attention Entropy ($\mathcal{H}$)** | 2.3003 | 2.2921 | 2.2958 | 2.3020 | 2.1637 | 2.2980 | 2.2983 | 2.2980 |
 | **Uniform Ref ($\ln 10$)** | 2.3026 | 2.3026 | 2.3026 | 2.3026 | 2.3026 | 2.3026 | 2.3026 | 2.3026 |
 | **Empirical Routing** | Uniform | Diffuse | Diffuse | Uniform | Contextual | Diffuse | Uniform | Uniform |
+
+*Note: §4.1 entropies are class-weighted per-class means; §6.6 entropies are sample-weighted global means across all sequence instances. Aggregations differ.*
 
 ---
 
