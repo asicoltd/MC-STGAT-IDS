@@ -39,6 +39,7 @@ Thumbs.db
 # Remakable JSON results
 *.json
 **/*.json
+!master_result.json
 
 # LaTeX build artifacts
 *.tex
